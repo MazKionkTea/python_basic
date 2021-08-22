@@ -1,8 +1,8 @@
 def sparator(arg):
-    print("\n", arg.center(59, "#"), "\n")
+	print("\n", arg.center(59, "#"), "\n")
 
 def overview():
-    sparator(" // Variable // ")
+    	sparator(" // Variable // ")
 	print("""
 	variable berfungsi untuk memesan runag pada memori
 	yang bisa diisi dengan suatu nilai dan bisa dipakai
@@ -63,15 +63,9 @@ assigningVariable()
 
 
 
-
-
-
-
-
-
 # multiple asignment
 def multipleAsignment():
-    sparator(" // multiple asignment // ")
+	sparator(" // multiple asignment // ")
 	print(
 	"""
 	python memunginkan kita bisa menetapkan nilai
@@ -99,10 +93,10 @@ def multipleAsignment():
 
 
 
-	# Standard Data Types
-	def dataType():
-		sparator(" // Standard Data Types // ")
-		print(
+# Standard Data Types
+def dataType():
+	sparator(" // Standard Data Types // ")
+	print(
 	"""
 	Data yang disimpan dalam memori dapat beragam jenis. Misalnya, 
 	usia seseorang disimpan sebagai nilai numerik dan 
@@ -120,7 +114,7 @@ def multipleAsignment():
 		 Dictionary
 
 	"""
-		)
+	)
 
 
 
