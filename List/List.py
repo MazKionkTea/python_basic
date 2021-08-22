@@ -1,9 +1,9 @@
 def sparator(arg=""):
-    print("\n", arg.center(59,"#"), "\n")
+	print("\n", arg.center(59,"#"), "\n")
 #sparator()
 
 def overview():
-    sparator(" // List // ")
+	sparator(" // List // ")
 	print(
 	"""
 Struktur data yang paling mendasar di Python adalah urutannya/sequence. 
@@ -27,7 +27,7 @@ dan untuk menemukan elemen terbesar dan terkecil.
 
 
 def pythonList():
-    sparator(" // Python Lists // ")
+	sparator(" // Python Lists // ")
 	print(
 	"""
 List/Daftar ini adalah tipe data versatile/paling serbaguna 
@@ -53,7 +53,7 @@ dan daftar bisa diiris, digabungkan dan sebagainya.
 
 
 def accsessingList():
-    sparator(" // Accessing Values in Lists // ")
+	sparator(" // Accessing Values in Lists // ")
 	print(
 	"""
 Untuk mengakses nilai dalam list, gunakan tanda kurung square 
@@ -72,11 +72,11 @@ Bila kode di atas dieksekusi, ia menghasilkan hasil berikut :
 	)
 
 	#!/usr/bin/python3
-    list1 = ['physics', 'chemistry', 1997, 2000]
-    list2 = [1, 2, 3, 4, 5, 6, 7 ]
+    	list1 = ['physics', 'chemistry', 1997, 2000]
+    	list2 = [1, 2, 3, 4, 5, 6, 7 ]
 
-    print ("list1[0]: ", list1[0])
-    print ("list2[1:5]: ", list2[1:5])
+    	print ("list1[0]: ", list1[0])
+    	print ("list2[1:5]: ", list2[1:5])
 
 #accsessingList()
 
@@ -85,7 +85,7 @@ Bila kode di atas dieksekusi, ia menghasilkan hasil berikut :
 
 
 def updatingList():
-    sparator(" // Updating Lists // ")
+    	sparator(" // Updating Lists // ")
 	print(
 	"""
 Kita dapat memperbarui elemen tunggal atau beberapa elemen list 
@@ -115,7 +115,7 @@ Bila kode di atas dieksekusi, ia menghasilkan berikut :
 
 
 def deletingList():
-    sparator(" // Delete List Elements // ")
+    	sparator(" // Delete List Elements // ")
 	print(
 	"""
 Untuk menghapus elemen list, Kita dapat menggunakan 
@@ -145,7 +145,7 @@ CATATAN: remove() Metode dibahas di bagian selanjutnya.
 
 
 def listOperation():
-    sparator(" // Basic List Operations // ")
+    	sparator(" // Basic List Operations // ")
 	print(
 	"""
 List merespons operator + dan * seperti string; 
@@ -170,7 +170,7 @@ for x in [1,2,3]:
 
 def builtInMethod():
 	sparator(" // Indexing, Slicing and Matrixes // ")
-    print(
+    	print(
 	"""
 Karena list adalah urutan, pengindeksan dan irisan kerja sama 
 jalan untuk list seperti yang dilakukan pada string.
