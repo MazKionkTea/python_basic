@@ -5,14 +5,14 @@ def overview():
 	sparator(" // Variable // ")
 	print(
 	"""
-	variable berfungsi untuk memesan runag pada memori
-	yang bisa diisi dengan suatu nilai dan bisa dipakai
-	secara berulang berulang.
+variable berfungsi untuk memesan runag pada memori
+yang bisa diisi dengan suatu nilai dan bisa dipakai
+secara berulang berulang.
 
-	yang berarti saat kita membuat sebuah variabel,
-	kita sudah memesan sebagian kecil rung memori
-	untuk dipakai dan diisi dengan sebuah nilai
-	untuk kita pakai kembali
+yang berarti saat kita membuat sebuah variabel,
+kita sudah memesan sebagian kecil rung memori
+untuk dipakai dan diisi dengan sebuah nilai
+untuk kita pakai kembali
 	"""
 	)
 
@@ -25,31 +25,31 @@ def assigningVariable():
 	sparator(" // menetapkan nilai variabel // ")
 	print(
 	"""
-	tidak ada pernyataan eksplisit untuk membuat
-	sebuah variabel,Deklarasi terjadi secara otomatis
-	ketika kita menetapkan nilai untuk variabel.
-	Tanda sama dengan (=) digunakan untuk
-	menetapkan nilai dalam sebuah variabel.
+tidak ada pernyataan eksplisit untuk membuat
+sebuah variabel,Deklarasi terjadi secara otomatis
+ketika kita menetapkan nilai untuk variabel.
+Tanda sama dengan (=) digunakan untuk
+menetapkan nilai dalam sebuah variabel.
 
-	cara membuat variabel sangatlah mudah,
-	hanya perlu mengetikan nama variabel,
-	diikuti tanda sama dengan dan nilai variabelnya.
+cara membuat variabel sangatlah mudah,
+hanya perlu mengetikan nama variabel,
+diikuti tanda sama dengan dan nilai variabelnya.
 
-	nilai variabel bisa diisi dengan nilai
-	integer(bilangan bulat atau desimal), karakter,
-	string, list, tuple dan dictionary.
+nilai variabel bisa diisi dengan nilai
+integer(bilangan bulat atau desimal), karakter,
+string, list, tuple dan dictionary.
 
-	Contoh :
+Contoh :
 
-		counter = 1000      integer
-		miles = 100.0       float
-		name = "john"       string
+	counter = 1000      integer
+	miles = 100.0       float
+	name = "john"       string
 
-		print (counter)
-		print (miles)
-		print (name)
+	print (counter)
+	print (miles)
+	print (name)
 
-	hasil yang akan tampil di layar adalah :
+hasil yang akan tampil di layar adalah :
 	"""
 	)
 
@@ -70,26 +70,26 @@ def multipleAsignment():
 	sparator(" // multiple asignment // ")
 	print(
 	"""
-	python memunginkan kita bisa menetapkan nilai
-	tunggal untuk beberapa variabel.
+python memunginkan kita bisa menetapkan nilai
+tunggal untuk beberapa variabel.
 
-	Contoh :
+Contoh :
 
-		a = b = c = 1
+	a = b = c = 1
 
-	disini, objek integer dibuat dengan nilai 1,
-	dan semua tiga variabel ditugaskan kedalam
-	alokasi memory yang sama. kita juga bisa menetapkan
-	beberapa objek untuk tiap variabel.
+disini, objek integer dibuat dengan nilai 1,
+dan semua tiga variabel ditugaskan kedalam
+alokasi memory yang sama. kita juga bisa menetapkan
+beberapa objek untuk tiap variabel.
 
-	contoh :
+contoh :
 
-		a, b, c = 1, 2, "john"
+	a, b, c = 1, 2, "john"
 
-	Di sini, dua integer objek dengan nilai 1 dan 2 
-	ditugaskan untuk variabel a dan b masing-masing, 
-	dan satu objek string dengan nilai "john" 
-	ditetapkan untuk variabel c.
+Di sini, dua integer objek dengan nilai 1 dan 2 
+ditugaskan untuk variabel a dan b masing-masing, 
+dan satu objek string dengan nilai "john" 
+ditetapkan untuk variabel c.
 	"""
 	)
 
@@ -102,20 +102,20 @@ def dataType():
 	sparator(" // Standard Data Types // ")
 	print(
 	"""
-	Data yang disimpan dalam memori dapat beragam jenis. Misalnya, 
-	usia seseorang disimpan sebagai nilai numerik dan 
-	alamatnya disimpan sebagai karakter alfanumerik. 
-	Python memiliki beragam jenis data standar yang digunakan 
-	untuk menentukan kemungkinan pengoperasian python 
-	dan metode penyimpanan.
+Data yang disimpan dalam memori dapat beragam jenis. Misalnya, 
+usia seseorang disimpan sebagai nilai numerik dan 
+alamatnya disimpan sebagai karakter alfanumerik. 
+Python memiliki beragam jenis data standar yang digunakan 
+untuk menentukan kemungkinan pengoperasian python 
+dan metode penyimpanan.
 
-	Python memiliki lima tipe data standar
+Python memiliki lima tipe data standar
 
-		 Numbers
-		 String
-		 List
-		 Tuple
-		 Dictionary
+	 Numbers
+	 String
+	 List
+	 Tuple
+	 Dictionary
 
 	"""
 	)
@@ -129,45 +129,87 @@ def PythonNumber():
 	sparator(" // Python Numbers // ")
 	print(
 	"""
-	tipe data number menyimpan nilai numerik. 
-	object number dibuat ketika kita menetapkan sebuah nilai. 
+tipe data number menyimpan nilai numerik. 
+object number dibuat ketika kita menetapkan sebuah nilai. 
 
-	Contoh :
+Contoh :
 
-		var1 = 1
-		var2 = 10
+	var1 = 1
+	var2 = 10
 
-	kita bisa menghapus yang mengacu kepada
-	suatu object dengan menggunakan del statement. 
-	sintak untuk pernyataan del yaitu sbb :
+kita bisa menghapus yang mengacu kepada
+suatu object dengan menggunakan del statement. 
+sintak untuk pernyataan del yaitu sbb :
 
-		del var1[,var2[,var3[....,varN]]]]
+	del var1[,var2[,var3[....,varN]]]]
 
-	Kita bisa menghapus satu objek tunggal atau 
-	beberapa objek dengan menggunakan pernyataan del. 
+Kita bisa menghapus satu objek tunggal atau 
+beberapa objek dengan menggunakan pernyataan del. 
 
-	Contoh :
+Contoh :
 
-		del var del var_a, var_b
+	del var del var_a, var_b
 
-	python mendukung tiga tipe numerik yang berbeda
+python mendukung tiga tipe numerik yang berbeda
 
-		- int
-		- float
-		- complex
-	
-	dibawah ini adalah beberapa tipe number
+	- int
+	- float
+	- complex
 
-		int			float			complex
-		
-		10			0.0			3.14j
-		100			15.20			45.j
-		-786			-21.9			9.322e-36j
-		080			32.3+e18		.876j
-		-0480			-90.			-.6545+0j
-		-0x260			-32.54e100		3e+26j
-		0x69			70.2-E12		3.56e-7j
+dibawah ini adalah beberapa tipe number
+
+	int			float			complex
+
+	10			0.0			3.14j
+	100			15.20			45.j
+	-786			-21.9			9.322e-36j
+	080			32.3+e18		.876j
+	-0480			-90.			-.6545+0j
+	-0x260			-32.54e100		3e+26j
+	0x69			70.2-E12		3.56e-7j
 	"""
 	)
 
 PythonNumber()
+
+
+
+# Python Strings
+def pythonString():
+	sparator(" // Python String // ")
+	print(
+	"""
+string dalam python diidentifilasi sebagai gabungan karakter
+yang diapit oleh tanda kutip (kutip satu atau kutip dua).
+subset dari sebuah string (beberapa bagian karakter dari sebuah string) 
+bisa diambil/dipisahkan dengan menggunakan operator irisan/slice ([ ] dan [ : ]) 
+dengan indeks yang dimulai dari 0 (nol) sebagai awal dari indeks.
+
+tanda plus (+) adalah penggabungan/concatination sting operator 
+dan tanda bintang/asterisk (*) adalah pengulangan/repetition operator.open
+
+contoh :
+
+	#!/usr/bin/python3
+	str ='Hello World!'
+	print(str)	# Prints complete string
+	print(str[0])	# Prints first character of the string
+	print(str[2:5])	# Prints characters starting from 3rd to 5th
+	print(str[2:])	# Prints string starting from 3rd character
+	print(str *2)	# Prints string two times
+	print(str +"TEST")	# Prints concatenated string
+
+ketika kode dieksekusi akan menghasilkan :
+	"""
+	)
+
+	#!/usr/bin/python3
+	str ='Hello World!'
+	print(str)	# Prints complete string
+	print(str[0])	# Prints first character of the string
+	print(str[2:5])	# Prints characters starting from 3rd to 5th
+	print(str[2:])	# Prints string starting from 3rd character
+	print(str *2)	# Prints string two times
+	print(str +"TEST")	# Prints concatenated string
+
+pythonString()
