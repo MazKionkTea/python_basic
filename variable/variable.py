@@ -213,3 +213,52 @@ ketika kode dieksekusi akan menghasilkan :
 	print(str +"TEST")	# Prints concatenated string
 
 pythonString()
+
+
+
+# Python Lists
+def pythonList():
+	sparator(" // Python List // ")
+	print(
+	"""
+tipe data list dalam python adalah tipe data yang paling sebaguna.
+untuk mengisi item pada list hanya dengan menggunakan kurung siku ([]) 
+dan menggunakan koma (,) jika itemnya memiliki lebih dari satu nilai.
+
+list hamir sama dengan tipe data array pada bahas pemrograman yang lain 
+seperti bahasa pemrograman C atau bahasa pemrograman yang lain. 
+yang memnedakannya adalah bahwa list bisa diisi dengan tipe data yang berbeda. 
+
+nilai yang terkandung dalam list bisa diakses dengan menggunakan 
+operator slice/irisan ([ ] dan [ : ]) dengan indeks yang dimulai dengan 
+indeks 0 sebagai awal. tanda plus (+) berfungsi untuk menggabungkan/concatination 
+dan tanda bintang/asterisk (*) berfungsi untuk pengulangan/repetition operator.
+
+Contoh :
+
+	#!/usr/bin/python3
+	list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+	tinylist = [123, 'john']
+	print (list)         	# Prints complete list
+	print (list[0])       	# Prints first element of the list
+	print (list[1:3])    	# Prints elements starting from 2nd till 3rd 
+	print (list[2:])     	# Prints elements starting from 3rd element
+	print (tinylist * 2)  	# Prints list two times
+	print (list + tinylist) # Prints concatenated lists
+	
+ketika kode dijalankan akan menghasilkan :
+	"""
+	)
+
+	#!/usr/bin/python3
+	list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+	tinylist = [123, 'john']
+	print (list)         	# Prints complete list
+	print (list[0])       	# Prints first element of the list
+	print (list[1:3])    	# Prints elements starting from 2nd till 3rd 
+	print (list[2:])     	# Prints elements starting from 3rd element
+	print (tinylist * 2)  	# Prints list two times
+	print (list + tinylist) # Prints concatenated lists
+
+pythonList()
+
