@@ -2,8 +2,9 @@ def sparator(arg):
 	print("\n", arg.center(59, "#"), "\n")
 
 def overview():
-    	sparator(" // Variable // ")
-	print("""
+	sparator(" // Variable // ")
+	print(
+	"""
 	variable berfungsi untuk memesan runag pada memori
 	yang bisa diisi dengan suatu nilai dan bisa dipakai
 	secara berulang berulang.
@@ -12,7 +13,8 @@ def overview():
 	kita sudah memesan sebagian kecil rung memori
 	untuk dipakai dan diisi dengan sebuah nilai
 	untuk kita pakai kembali
-	""")
+	"""
+	)
 
 overview()
 
@@ -20,7 +22,7 @@ overview()
 
 # Assigning Values to Variables
 def assigningVariable():
-        sparator(" // menetapkan nilai variabel // ")
+	sparator(" // menetapkan nilai variabel // ")
 	print(
 	"""
 	tidak ada pernyataan eksplisit untuk membuat
@@ -89,7 +91,9 @@ def multipleAsignment():
 	dan satu objek string dengan nilai "john" 
 	ditetapkan untuk variabel c.
 	"""
-		)
+	)
+
+multipleAsignment()
 
 
 
@@ -115,6 +119,8 @@ def dataType():
 
 	"""
 	)
+
+dataType()
 
 
 
@@ -152,14 +158,16 @@ def PythonNumber():
 	
 	dibawah ini adalah beberapa tipe number
 
-		int				float				complex
+		int			float			complex
 		
-		10				0.0					3.14j
-		100				15.20				45.j
-		-786			-21.9				9.322e-36j
-		080				32.3+e18			.876j
-		-0480			-90.				-.6545+0j
-		-0x260			-32.54e100			3e+26j
-		0x69			70.2-E12			3.56e-7j
+		10			0.0			3.14j
+		100			15.20			45.j
+		-786			-21.9			9.322e-36j
+		080			32.3+e18		.876j
+		-0480			-90.			-.6545+0j
+		-0x260			-32.54e100		3e+26j
+		0x69			70.2-E12		3.56e-7j
 	"""
 	)
+
+PythonNumber()
