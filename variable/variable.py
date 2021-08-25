@@ -262,3 +262,71 @@ ketika kode dijalankan akan menghasilkan :
 
 pythonList()
 
+def sparator(arg):
+	print("\n", arg.center(59, "#"), "\n")
+
+# Python Tuple
+def pythonTuple():
+	sparator(" // Python Tuple // ")
+	print(
+	"""
+Tuple adalah tipe data urutan tang lain yang sama seperti list. tuple 
+bisa di isi dengan beberapa nilai tipe data yang dipisahkan oleh koma 
+yang diapit oleh tanda kurung ( () ) yan berbeda dengan list yang diapit 
+dengan tanda kurung siku/kotak ( [] ).
+
+yang paling membedakan dari list dan tuple adalah isi dari sebuah list 
+bisa dimodifikasi/diubah, sedangkan pada tuple isinya tidak bisa diubah 
+sama sekali (read-only).
+
+Contoh :
+	
+	#!/usr/bin/python3 
+	tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  ) 
+	tinytuple = (123, 'john') 
+	print (tuple)           # Prints complete tuple 
+	print (tuple[0])        # Prints first element of the tuple 
+	print (tuple[1:3])      # Prints elements starting from 2nd till 3rd  
+	print (tuple[2:])       # Prints elements starting from 3rd element 
+	print (tinytuple * 2)   # Prints tuple two times 
+	print (tuple + tinytuple) # Prints concatenated tuple 
+	
+ketika kode diatas dieksekusi akan menghasilkan :
+	"""
+	)
+	
+	#!/usr/bin/python3 
+	tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  ) 
+	tinytuple = (123, 'john') 
+	print (tuple)           # Prints complete tuple 
+	print (tuple[0])        # Prints first element of the tuple 
+	print (tuple[1:3])      # Prints elements starting from 2nd till 3rd  
+	print (tuple[2:])       # Prints elements starting from 3rd element 
+	print (tinytuple * 2)   # Prints tuple two times 
+	print (tuple + tinytuple) # Prints concatenated tuple 
+	
+	print(
+	"""
+	kode dibawah adalah kode tidak valid dalam tuple, karena kita 
+	mencoba untuk merubah nilai tuple. sama kasusnya seperti pada list 
+	
+	#!/usr/bin/python3 
+	tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  ) 
+	list = [ 'abcd', 786 , 2.23, 'john', 70.2  ] 
+	tuple[2] = 1000    # Invalid syntax with tuple 
+	list[2] = 1000     # Valid syntax with list 
+	
+ketika kode diatas akan menghasilkan : error
+	"""
+	)
+	
+	try:
+		#!/usr/bin/python3 
+		tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  ) 
+		list = [ 'abcd', 786 , 2.23, 'john', 70.2  ] 
+		tuple[2] = 1000    # Invalid syntax with tuple 
+		list[2] = 1000     # Valid syntax with list 
+	except TypeError:
+		print("TypeError: 'tuple' object does not support item assingment")
+		
+pythonTuple()
