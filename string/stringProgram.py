@@ -154,6 +154,7 @@ asumsikan variabel a hadalah 'Hello'
 and variabel b adalah 'Python'.
 
 
+
 Operator : 
 	+ (Concatenation/menggabungkan)
 Deskripsi :
@@ -172,6 +173,7 @@ Example :
 	a * 2 akan menghasilkan HelloHello
 
 
+
 Operator :
 	[] (Slice/iris)
 Description :
@@ -182,7 +184,7 @@ Example :
 
 
 Operator :
-	* (Range Slice/mengiris urutan)
+	[ : ] (Range Slice/mengiris urutan)
 Description :
 	 menghasilkan urutan karakter yang diiris 
 Example :
@@ -191,43 +193,44 @@ Example :
 
 
 Operator :
-	* (Repetition/pengulangan)
+	in (Membership/keanggotaan)
 Description :
-	menggabungkan beberapa salinan dari string yang sama
-	(membuat string baru)
+    mengembalikan nilai Terue jika karakter berada dalam string
 Example :
-	
-	a * 2 akan menghasilkan HelloHello
+	H in a alan menghasilkan 1
 
 
 
 Operator :
-	* (Repetition/pengulangan)
+	not in (Membership/keanggotaan)
 Description :
-	menggabungkan beberapa salinan dari string yang sama
-	(membuat string baru)
+	mengembalikan nilai Terue jika karakter tidak berada dalam string
 Example :
-	a * 2 akan menghasilkan HelloHello
+	M not in a akan menghasilkan 1
 
 
 
 Operator :
-	* (Repetition/pengulangan)
+	r/R (Raw String/string mentah)
 Description :
-	menggabungkan beberapa salinan dari string yang sama
-	(membuat string baru)
+    Menekan makna aktual Escape characters.
+    Sintaks untuk string mentah/string mentah persis sama
+    dengan string normal dengan pengecualian
+    operator string mentah/string mentah, huruf "r"
+    yang mendahului tanda kutip.
+    "r" bisa huruf kecil (r) atau huruf besar (R)
+    dan harus ditempatkan segera sebelum tanda kutip pertama. 
 Example :
-	a * 2 akan menghasilkan HelloHello
+	print r'\n' prints \n and print R'\n' prints \n
 
 
 
 Operator :
-	* (Repetition/pengulangan)
+	% (Format)
 Description :
-	menggabungkan beberapa salinan dari string yang sama
-	(membuat string baru)
+	Melakukan pemformatan string.
 Example :
-	a * 2 akan menghasilkan HelloHello
+	akan dibahas dalam seksi selanjutnya
     """
     )
 
