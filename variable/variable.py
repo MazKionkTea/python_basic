@@ -1,7 +1,7 @@
-def sparator(arg):
-	Print("\n", "#".center.59, "#")
+def sparator(arg = "#"):
+	print("\n", "#".center(59, "#"))
 	print(arg.center(59, "#"))
-	Print("#".center(59, "#"), "\n")
+	print("#".center(59, "#"), "\n")
 
 def overview():
 	sparator(" // Variable // ")
@@ -18,8 +18,6 @@ untuk kita pakai kembali
 	"""
 	)
 
-overview()
-
 
 
 # Assigning Values to Variables
@@ -34,7 +32,7 @@ Tanda sama dengan (=) digunakan untuk
 menetapkan nilai dalam sebuah variabel.
 
 cara membuat variabel sangatlah mudah,
-hanya perlu mengetikan nama variabel,
+hanya perlu mengetikan nama variabel
 diikuti tanda sama dengan dan nilai variabelnya.
 
 nilai variabel bisa diisi dengan nilai
@@ -63,12 +61,10 @@ hasil yang akan tampil di layar adalah :
 	print (miles)
 	print (name)
 
-assigning_variable()
 
 
-
-# multiple asignment
-def multiple_asignment():
+# multiple assignment
+def multiple_assignment():
 	sparator(" // multiple asignment // ")
 	print(
 	"""
@@ -95,8 +91,6 @@ ditetapkan untuk variabel c.
 	"""
 	)
 
-multiple_asignment()
-
 
 
 # Standard Data Types
@@ -121,8 +115,6 @@ Python memiliki lima tipe data standar
 
 	"""
 	)
-
-data_type()
 
 
 
@@ -172,8 +164,6 @@ dibawah ini adalah beberapa tipe number
 	"""
 	)
 
-Python_number()
-
 
 
 # Python Strings
@@ -213,8 +203,6 @@ ketika kode dieksekusi akan menghasilkan :
 	print(str[2:])	# Prints string starting from 3rd character
 	print(str *2)	# Prints string two times
 	print(str +"TEST")	# Prints concatenated string
-
-python_string()
 
 
 
@@ -262,7 +250,7 @@ ketika kode dijalankan akan menghasilkan :
 	print (tinylist * 2)  	# Prints list two times
 	print (list + tinylist) # Prints concatenated lists
 
-python_list()
+
 
 
 # Python Tuple
@@ -328,5 +316,125 @@ ketika kode diatas akan menghasilkan : error
 		list[2] = 1000     # Valid syntax with list 
 	except TypeError:
 		print("TypeError: 'tuple' object does not support item assingment")
-		
+
+
+
+# Python Dictionary 
+def python_dictionary():
+	sparator(" // Python Dictionary // ")
+	print(
+	"""
+Python dictionary adalah semacam tipe hash-table (tabel campuran). 
+tipe data ini bekerja seperti assosiative array atau hashes/campuran 
+yang dapat ditemukan pada bahasa pemrograman perl yang memiliki 
+key-value pair (pasangan kata kunci dan nilai). dictionary key hampir 
+bisa diisi dengan tipe data apapun. tetapi biasanya diisi dengan tipe 
+data number dan string. nilai dari dictionary bisa dapat diubah-ubah. 
+dictionary diapit dengan tanda kurung kurawal ( {} ) dan cara mengisi 
+dan mengakses nilainya dengan menggunakan tanda kurung siku ( [] ) 
+
+Contoh :
+	
+	#!/usr/bin/python3 
+	dict = {} 
+	dict['one'] = "This is one" 
+	dict[2]     = "This is two" 
+	tinydict = {'name': 'john','code':6734, 'dept': 'sales'} 
+	print (dict['one'])       # Prints value for 'one' key 
+	print (dict[2])           # Prints value for 2 key 
+	print (tinydict)          # Prints complete dictionary 
+	print (tinydict.keys())   # Prints all the keys 
+	print (tinydict.values()) # Prints all the values 
+
+Ketika kode dijalankan akan menghasilkan :
+	"""
+	)
+	
+	#!/usr/bin/python3 
+	dict = {} 
+	dict['one'] = "This is one" 
+	dict[2]     = "This is two" 
+	tinydict = {'name': 'john','code':6734, 'dept': 'sales'} 
+	print (dict['one'])       # Prints value for 'one' key 
+	print (dict[2])           # Prints value for 2 key 
+	print (tinydict)          # Prints complete dictionary 
+	print (tinydict.keys())   # Prints all the keys 
+	print (tinydict.values()) # Prints all the values
+
+
+
+# Data Type Conversion 
+def dataTypeConversion():
+	sparator(" // Data Type Conversion // ")
+	print(
+	"""
+Terkadang kita butuh untuk bisa mengubah nilai atau tipe data menjadi 
+tipe data yang lain. python memungkinkan kita untuk bisa merubah 
+nilai atau tipe data menjadi tipe data yang lain dengan menggunakan 
+built-in function yang telah disediakan oleh bahasa pemrograman ini.
+
+Function
+Description 
+
+int(x [,base])
+Converts x to an integer. The base specifies the base if x is a string. 
+									
+float(x)
+Converts x to a floating-point number.
+
+complex(real [,imag])
+Creates a complex number.
+
+str(x)
+Converts object x to a string representation.
+
+repr(x)
+Converts object x to an expression string.
+
+eval(str)
+Evaluates a string and returns an object.
+
+tuple(s)
+Converts s to a tuple.
+
+list(s)
+Converts s to a list.
+
+set(s)
+Converts s to a set.
+
+dict(d)
+Creates a dictionary. d must be a sequence of (key,value) tuples.
+											
+frozenset(s)
+Converts s to a frozen set.
+
+chr(x)
+Converts an integer to a character.
+
+unichr(x)
+Converts an integer to a Unicode character.
+
+ord(x)
+Converts a single character to its integer value.
+
+hex(x)
+Converts an integer to a hexadecimal string.
+
+oct(x)
+Converts an integer to an octal string. 
+	"""
+	)
+
+
+
+overview()
+assigning_variable()
+multiple_assignment()
+data_type()
+Python_number()
+python_string()
+python_list()
 python_tuple()
+python_dictionary()
+dataTypeConversion()
