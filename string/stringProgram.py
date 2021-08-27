@@ -235,86 +235,146 @@ Example :
     )
 
 
-# 5
-# stringSpecialOperator()
-
-def stringFormattingOperator():
-    sparator("String Foramatting Operator")
+def string_formatting_operator():
+    sparator(" // String Foramatting Operator // ")
     print(
     """
-    salah satu fitur terbaik dari string format yaitu operator %.
-    operator ini sangat unik untuk tipe data string dan membuat 
-    fungsi print() menjadi sangat efektif.
-    contohnya :
+salah satu fitur terbaik dari string format yaitu operator %.
+operator ini sangat unik untuk tipe data string dan membuat 
+fungsi print() menjadi sangat efektif.
 
-        #!/usr/bin/python3
-        print("my name is %s and weight is %d kg!" % ("zara, 21"))
+Contoh :
 
-        ketika kode dieksekusi akan menampilkan :
-        (my name is zara and weight is 21 kg!)
+    #!/usr/bin/python3
+    print("my name is %s and weight is %d kg!" % ("zara, 21"))
 
-    dibawah ini adal h daftar simbol yang bisa digunakan oleh %.
+    ketika kode dieksekusi akan menampilkan :
+    (my name is zara and weight is 21 kg!)
 
 
-    Format Symbol       Conversion
 
-    %c                  character
-    %s                  string conversion via str() prior to formatting
-    %i                  signed decimal integer
-    %d                  signed decimal integer
-    %u                  unsigned decimal integer
-    %o                  octal integer
-    %x                  hexadecimal integer (lowercase letters)
-    %X                  hexadecimal integer (UPPERcase letters)
-    %e                  exponential notation (with lowercase 'e')
-    %E                  exponential notation (with UPPERcase 'E')
-    %f                  floating point real number
-    %g                  the shorter of %f and %e
-    %G                  the shorter of %f and %E
+dibawah ini adal h daftar Conversion/pengubah dan simbol
+yang bisa digunakan oleh %.
 
-    Simbol dan fungsionalitas lain yang didukung muncul di tabel berikut.
+Format Symbol : %c
+Conversion : karakter
 
-    Symbol              Functionality
+Format Symbol : %s
+Conversion : konversi string via str() Sebelum memformat
 
-    *                   argument specifies width or precision
-    -                   left justification
-    +                   display the sign
-    <sp>                leave a blank space before a positive number
-    #                   add the octal leading zero ( '0' ) or hexadecimal leading '0x' or '0X', depending on whether 'x' or 'X' were used.
-    0                   pad from left with zeros (instead of spaces)
-    %                   '%%' leaves you with a single literal '%'
-    (var)               mapping variable (dictionary arguments)
-    m.n.                m is the minimum total width and n is the number of digits todisplay after the decimal point (if appl.)
+Format Symbol : %i
+Conversion : Integer desimal yang ditandai
+
+Format Symbol : %d
+Conversion : Integer desimal yang ditandai
+
+Format Symbol : %u
+Conversion : Integer desimal yang tidak ditandai
+
+Format Symbol : %o
+Conversion : integer oktal
+
+Format Symbol : %x
+Conversion : Integer heksadesimal (lowercase huruf)
+
+Format Symbol : %X
+Conversion : Integer heksadesimal (UPPERcase huruf)
+
+Format Symbol : %e
+Conversion : notasi eksponensial (dengan lowercase 'e')
+
+Format Symbol : %E
+Conversion : notasi eksponensial (dengan UPPERcase 'E')
+
+Format Symbol : %f
+Conversion : floating point real number
+
+Format Symbol : %g
+Conversion : kependekan dari %f dan %e
+
+Format Symbol : %G
+Conversion : kependekan dari %f dan %E
+
+
+
+Simbol dan fungsionalitas/kegunaan lain yang didukung
+di tabel berikut.
+
+Symbol : *    
+Functionality : argumen yang menentukan lebar atau presisi
+
+Symbol : -    
+Functionality : pembenaran kiri.
+
+Symbol : +    
+Functionality : menampilkan tanda
+
+Symbol : <sp> 
+Functionality : meninggalkan ruang kosong sebelum angka positif
+
+Symbol : #    
+Functionality : menambahkan octal nol ('0') didepan atau heksadesimal
+                '0x' atau '0x', tergantung pada apakah
+                'X' atau 'x' yang digunakan.
+                
+Symbol : 0    
+Functionality : menambahkan nol dari sebelah kiri (bukan spasi)
+
+Symbol : %    
+Functionality : '%%' Meninggalkan Anda dengan satu literal '%'
+
+Symbol : (var)
+Functionality : mapping variable (dictionary arguments)
+
+Symbol : m.n. 
+Functionality : m adalah total lebar minimum dan n adalah
+                number dari digits untuk ditampilkan
+                setelah decimal point (if appl.)
+
     """
     )
 
+
+
 # string concatination
-def stringConcatination():
+def string_concatination():
     myString = input("Please input some text \
         >>> ")
 
     print("User was input " + myString)
+    print("User was input ", myString)
     print("User was input {}".format(myString))
     print(f"User was input {myString}")
 
-# 6
-# stringFormattingOperator()
-# stringConcatination()
 
-def tripleQuotes():
-    sparator("Triple Quotes")
+
+def triple_quotes():
+    sparator(" // Triple Quotes // ")
     print(
     """
-    python triple quote mengijinkan string multi lines
-    termasuk baris baru, tab dan karakter spesiala yang lain.
+python triple quote mengijinkan string multi lines
+termasuk baris baru, tab dan karakter spesiala yang lain.
 
-    sintaks untuk triple quotes bisa menggunakan tanda petik satu
-    atau menggunakan tanda petik dua. contoh :
+sintaks untuk triple quotes bisa menggunakan tanda petik satu
+atau menggunakan tanda petik dua.
+
+contoh :
+
+    #!/usr/bin/python3
+
+    para_str = '''
+    this is a long string that is made up ofseveral lines and
+    non-printable characters such asTAB ( \t ) and they will
+    show up that way when displayed.NEWLINEs within 
+    the string, whether explicitly given likethis within
+    the brackets [ \n ], or just a NEWLINE withinthe 
+    variable assignment will also show up.
+    '''
+
+ketika kode dieksekusi akan menghasilkan :
     """
     )
 
-    print(
-    '''
     #!/usr/bin/python3
 
     para_str = """
@@ -325,23 +385,7 @@ def tripleQuotes():
     the brackets [ \n ], or just a NEWLINE withinthe 
     variable assignment will also show up.
     """
-    '''
-    )
-
-    #!/usr/bin/python3
-
-    para_str = """
-    this is a long string that is made up ofseveral lines and
-    non-printable characters such asTAB ( \t ) and they will
-    show up that way when displayed.NEWLINEs within 
-    the string, whether explicitly given likethis within
-    the brackets [ \n ], or just a NEWLINE withinthe 
-    variable assignment will also show up.
-    """
-
-    print(
-        "ketika kode dieksekusi akan menamilkan :"
-    )
+    
     print(para_str)
 
     """
@@ -356,47 +400,47 @@ def tripleQuotes():
     
     print(
     """
-    raw string tidak memperlakukan backslash sebagai spesial 
-    karakter selamanya. setiapak karakter yang dimasukan kedalam 
-    raw string tetap seperti apa yang telah ditulis.
+raw string tidak memperlakukan backslash sebagai spesial 
+karakter selamanya. setiapak karakter yang dimasukan kedalam 
+raw string tetap seperti apa yang telah ditulis.
+
+Contoh :
 
     #!/usr/bin/python3
     print("c:\\nowhere")
 
-    ketika kode diatas dieksekusi akan menghasilkan
+ketika kode diatas dieksekusi akan menghasilkan
 
     c:\nowhere
 
-    sekarang coba kita gunakan sebagai raw string. dengan 
-    menempatkan expresion dalam r'expresion'
+sekarang coba kita gunakan sebagai raw string. dengan 
+menempatkan expresion dalam r'expresion'
 
     #!/usr/bin/python3
     print(r"c:\\nowhere")
 
-    ketika kode dieksekusi akan menampilkan :
+ketika kode dieksekusi akan menampilkan :
 
     c:\\nowhere
 
-    dalam python, semua string akan diwakili unicode.
+dalam python, semua string akan diwakili unicode.
     """
     )
 
-# 7
-# tripleQuotes()
 
-def unicodeString():
-    sparator("Unicode String")
+
+def unicode_string():
+    sparator(" // Unicode String // ")
     print(
     """    
-    dalam pythhon3 semua string diwakili/mewakili unicode,
-    dalam python2 disimpan secara internal seperti 8 bit ASCII, 
-    karenanya itu dibutuhkan untuk menempel "u" untuk membuat 
-    unicode. hal tersebut sudah tidak diperlukan lagi.
+dalam pythhon3 semua string diwakili/mewakili unicode,
+dalam python2 disimpan secara internal seperti 8 bit ASCII, 
+karenanya itu dibutuhkan untuk menempel "u" untuk membuat 
+unicode. hal tersebut sudah tidak diperlukan lagi.
     """
     )
 
-# 8
-# unicodeString()
+
 
 def builtInMethod():
     sparator("Built-in String Method")
@@ -774,3 +818,13 @@ String capitalize() MethodIt returns a copy of the string with only its first ch
 
 format()
 """
+
+
+
+# overview()
+# updating_string()
+# escape_character()
+# string_special_operator()
+# string_formatting_operator()
+# string_concatination()
+# triple_quotes()
