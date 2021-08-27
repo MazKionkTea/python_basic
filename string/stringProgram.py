@@ -442,94 +442,10 @@ unicode. hal tersebut sudah tidak diperlukan lagi.
 
 
 
-def builtInMethod():
-    sparator("Built-in String Method")
+def builtIn_method():
+    sparator(" // Built-in Method // ")
     print(
     """
-    Bult-in String Method
-    python memiliki Bit-in Method untuk memanipukasi string.
-
-    String capitalize() Method.
-        mengubah karakter pertama dari sebuah string menjadi 
-        huruf kapital. tanpa perlu memasukan parameter/argument.
-
-        sintaks :
-            str.capitalize()
-
-        contoh :
-            str = "first character will be capital"
-            print("str.capitalize() :", str.capitalize())
-        
-        maka hasil yang akan ditamilkan adalah :
-        
-            First character will be capital
-    
-
-    String center() Method
-        sebuah string akan ditempatkan ditengah yang diapit 
-        oleh sebuah karakter tanpa spasi.
-
-        sintaks :
-            center(width, fillchar) atau 
-            center(width[, fillchar])
-
-        parameter :
-        - width (total semua karakter termasuk 
-          karakter yang mengapit string tersebut)
-        - fillchar (karakter yang akan dijadikan sebagai 
-          pengapit string dan tidak lebih dari satu karakter atau spasi)
-    
-        contoh :
-
-        contoh = " this string is enclosed by characters (Q) "
-        print(contoh.center(70, 'Q'))
-
-        maka hasil yang akan ditamilkan adalah :
-
-            QQQQQQQ this string is enclosed by characters (Q) QQQQQQQQ
-    
-        total dar karakter dari contoh diatas adalah 70 karakter termasuk spasi.
-        jika parameter width kurang dari total karakter, maka paremeter 
-        fillchar tidak akan ditampilkan. jika fillchar dari contoh 
-        diatas diisi dengan angka 10 maka yang akan ditampilkan 
-        hanya stringnya saja karena jumlah dari karakter string 
-        melebihi parameter fillchar. 
-
-        String count() Method
-            menghitung jumlah sebuah karakter atau kata dalam string 
-            atau substring, jika kenggunakan metode pengindeksan, 
-            diperlukan parameter indeks awal dan indeks akhir.
-            
-            sintaks :
-                count(string) atau
-                str.count(sub, start = 0, end = len(string))
-                paraneter :
-                - sub (subsstring yang akan dihitung dalam sebuah string)
-                - start (indeks awal yang akan dihitung jika tidak dimulai dari indeks 0)
-                - end (indeks akhir yang akan dihitung)
-            
-            contoh :
-
-                txt = "counting an apples, how many apple words in this string?"
-                print(txt.count("apple"))
-
-                blok kode diatas menghitung berapa banyak kata apple
-                dalam sebuah variabel string txt tersebut.
-                jika dijalankan akan menampilkan 
-
-                    2
-        
-    """
-    )
-
-
-
-
-"""
-# capital()
-# center()
-# count()
-
 capitalize()
 # Mengubah karakter pertama menjadi huruf besar
 
@@ -665,7 +581,10 @@ upper()
 zfill()	            
 # Mengisi string dengan jumlah 0 nilai yang ditentukan di awal
 
-"""
+    """
+    )
+
+
 
 """
 decode(encoding='UTF-8',errors='strict')
@@ -818,6 +737,88 @@ String capitalize() MethodIt returns a copy of the string with only its first ch
 
 format()
 """
+
+
+
+def builtInMethod():
+    sparator("Built-in String Method")
+    print(
+    """
+    Bult-in String Method
+    python memiliki Bit-in Method untuk memanipukasi string.
+
+    String capitalize() Method.
+        mengubah karakter pertama dari sebuah string menjadi 
+        huruf kapital. tanpa perlu memasukan parameter/argument.
+
+        sintaks :
+            str.capitalize()
+
+        contoh :
+            str = "first character will be capital"
+            print("str.capitalize() :", str.capitalize())
+        
+        maka hasil yang akan ditamilkan adalah :
+        
+            First character will be capital
+    
+
+    String center() Method
+        sebuah string akan ditempatkan ditengah yang diapit 
+        oleh sebuah karakter tanpa spasi.
+
+        sintaks :
+            center(width, fillchar) atau 
+            center(width[, fillchar])
+
+        parameter :
+        - width (total semua karakter termasuk 
+          karakter yang mengapit string tersebut)
+        - fillchar (karakter yang akan dijadikan sebagai 
+          pengapit string dan tidak lebih dari satu karakter atau spasi)
+    
+        contoh :
+
+        contoh = " this string is enclosed by characters (Q) "
+        print(contoh.center(70, 'Q'))
+
+        maka hasil yang akan ditamilkan adalah :
+
+            QQQQQQQ this string is enclosed by characters (Q) QQQQQQQQ
+    
+        total dar karakter dari contoh diatas adalah 70 karakter termasuk spasi.
+        jika parameter width kurang dari total karakter, maka paremeter 
+        fillchar tidak akan ditampilkan. jika fillchar dari contoh 
+        diatas diisi dengan angka 10 maka yang akan ditampilkan 
+        hanya stringnya saja karena jumlah dari karakter string 
+        melebihi parameter fillchar. 
+
+        String count() Method
+            menghitung jumlah sebuah karakter atau kata dalam string 
+            atau substring, jika kenggunakan metode pengindeksan, 
+            diperlukan parameter indeks awal dan indeks akhir.
+            
+            sintaks :
+                count(string) atau
+                str.count(sub, start = 0, end = len(string))
+                paraneter :
+                - sub (subsstring yang akan dihitung dalam sebuah string)
+                - start (indeks awal yang akan dihitung jika tidak dimulai dari indeks 0)
+                - end (indeks akhir yang akan dihitung)
+            
+            contoh :
+
+                txt = "counting an apples, how many apple words in this string?"
+                print(txt.count("apple"))
+
+                blok kode diatas menghitung berapa banyak kata apple
+                dalam sebuah variabel string txt tersebut.
+                jika dijalankan akan menampilkan 
+
+                    2
+        
+    """
+    )
 
 
 
