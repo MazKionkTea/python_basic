@@ -481,6 +481,7 @@ def builtInMethod():
 
 
 
+"""
 # capital()
 # center()
 # count()
@@ -620,6 +621,7 @@ upper()
 zfill()	            
 # Mengisi string dengan jumlah 0 nilai yang ditentukan di awal
 
+"""
 
 """
 decode(encoding='UTF-8',errors='strict')
@@ -772,39 +774,3 @@ String capitalize() MethodIt returns a copy of the string with only its first ch
 
 format()
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
