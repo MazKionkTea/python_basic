@@ -1,5 +1,7 @@
 def sparator(arg):
-	print("\n", arg.center(59, "#"), "\n")
+	Print("\n", "#".center.59, "#")
+	print(arg.center(59, "#"))
+	Print("#".center(59, "#"), "\n")
 
 def overview():
 	sparator(" // Variable // ")
@@ -21,7 +23,7 @@ overview()
 
 
 # Assigning Values to Variables
-def assigningVariable():
+def assigning_variable():
 	sparator(" // menetapkan nilai variabel // ")
 	print(
 	"""
@@ -61,12 +63,12 @@ hasil yang akan tampil di layar adalah :
 	print (miles)
 	print (name)
 
-assigningVariable()
+assigning_variable()
 
 
 
 # multiple asignment
-def multipleAsignment():
+def multiple_asignment():
 	sparator(" // multiple asignment // ")
 	print(
 	"""
@@ -93,12 +95,12 @@ ditetapkan untuk variabel c.
 	"""
 	)
 
-multipleAsignment()
+multiple_asignment()
 
 
 
 # Standard Data Types
-def dataType():
+def data_type():
 	sparator(" // Standard Data Types // ")
 	print(
 	"""
@@ -120,12 +122,12 @@ Python memiliki lima tipe data standar
 	"""
 	)
 
-dataType()
+data_type()
 
 
 
 # Python Numbers
-def PythonNumber():
+def Python_number():
 	sparator(" // Python Numbers // ")
 	print(
 	"""
@@ -170,12 +172,12 @@ dibawah ini adalah beberapa tipe number
 	"""
 	)
 
-PythonNumber()
+Python_number()
 
 
 
 # Python Strings
-def pythonString():
+def python_string():
 	sparator(" // Python String // ")
 	print(
 	"""
@@ -212,12 +214,12 @@ ketika kode dieksekusi akan menghasilkan :
 	print(str *2)	# Prints string two times
 	print(str +"TEST")	# Prints concatenated string
 
-pythonString()
+python_string()
 
 
 
 # Python Lists
-def pythonList():
+def python_list():
 	sparator(" // Python List // ")
 	print(
 	"""
@@ -260,13 +262,11 @@ ketika kode dijalankan akan menghasilkan :
 	print (tinylist * 2)  	# Prints list two times
 	print (list + tinylist) # Prints concatenated lists
 
-pythonList()
+python_list()
 
-def sparator(arg):
-	print("\n", arg.center(59, "#"), "\n")
 
 # Python Tuple
-def pythonTuple():
+def python_tuple():
 	sparator(" // Python Tuple // ")
 	print(
 	"""
@@ -329,4 +329,4 @@ ketika kode diatas akan menghasilkan : error
 	except TypeError:
 		print("TypeError: 'tuple' object does not support item assingment")
 		
-pythonTuple()
+python_tuple()
