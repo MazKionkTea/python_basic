@@ -1,175 +1,236 @@
-def sparator(arg):
-    print(
-    "\n", 
-    "#" * 20,
-    f"// {arg} //", 
-    "#" * 20,
-    "\n"
-    )
-
-def stringOverview():
-    sparator("String")
-    print(
-    """
-    string adalah tipe data yang paling populer dalam bahasa 
-    python. kita dapat membuatnya dengan mudah dengan 
-    menempatkan karakter/kata/kalimat yang diapit oleh dua 
-    tanda petik. bisa menggunakan tanda petik satu ('') ataupun 
-    tanda petik dua (""). contoh :
-
-    variabelString1 = 'This is a variable with String data type value'
-    variabelString2 = "This is a variable with String data type value to"
+def sparator(arg = "#"):
+    print("\n", "#".center(59, "#"))
+    print(arg.center(59, "#"))
+    print("#".center(59, "#"), "\n")
     
-    
-    semua yang diapit oleh dua tanda petik akan dianggap 
-    sebagai tipe data string.
+def overview():
+	sparator(" // String //")
+	print(
+	"""
+string adalah tipe data yang paling populer dalam bahasa 
+python. kita dapat membuatnya dengan mudah dengan 
+menempatkan karakter/kata/kalimat yang diapit oleh dua 
+tanda petik. bisa menggunakan tanda petik satu (' ') ataupun 
+tanda petik dua (" "). contoh :
 
-    python tidak bisa mendukung sebuah tipe karakter.
-    untuk mengakses substring, sengan cara mengguakan tanda 
-    kurung kotak ([]) untuk memisahkan antara index substring.
-    contoh :
+semua yang diapit oleh dua tanda petik akan dianggap 
+sebagai tipe data string.
 
-        #!/usr/bin/python3
-        print("variabelString1[0] :", variabelString1[0])
-        print("variabelString2[1:5] :", variabelString2[1:5])
+python tidak bisa mendukung sebuah tipe karakter.
+untuk mengakses substring, sengan cara mengguakan tanda 
+kurung kotak ( [ ] ) untuk memisahkan antara index substring.
 
-        ketika kode diekdekusi, layar akan menampilkan :
+contoh :
+	
+	#!/usr/bin/python3
+	variabelString1 = 'This is a variable with String data type value'
+	variabelString2 = "This is a variable with String data type value to"
+	
+	print("variabel_string1[0] :", variabel_string1[0])
+	print("variabel_string2[1:5] :", variabel_string2[1:5])
 
-            variabelString1[0] : T
-            variabelString2[1:5] : his
+ketika kode diekdekusi akan menampilkan :
+	"""
+	)
+	
+	#!/usr/bin/python3
+	variabel_string1 = 'This is a variable with String data type value'
+	variabel_string2 = "This is a variable with String data type value to"
+	
+	print("variabel_string1[0] :", variabel_string1[0])
+	print("variabel_string2[1:5] :", variabel_string2[1:5])
 
-    coba
-    """
-    )
 
 
-variabelString1 = 'This is a variable with String data type value'
-variabelString2 = "This is a variable with String data type value to"
-
-# 1
-# stringOverview()
-
-def contoh1():
-    # kita gunakan variabel string sebelumnya
-    print("variabelString1[0] :", variabelString1[0])
-    print("variabelString2[1:5] :", variabelString2[1:5])
-    # ketika kode diekdekusi, layar akan menampilkan :
-        # variabelString[0] : T
-        # variabelString[1:5] : his
-
-# 2
-# contoh1()
-
-def updatingString():
-    sparator("Updating String")
+def updating_string():
+    sparator(" // Updating String // ")
     print(
     """
-    kita bisa mengupdate string yang sudah ada dengan 
-    menugaskan kembali sebuah variabel ke sting yang lain. 
-    nilai yang baru akan terkait dengan nilai sebelumnya atau 
-    untuk mengubah string yang benar-benar berbeda untuk 
-    disatukan sebagai kesatuan.
+kita bisa mengupdate string yang sudah ada dengan 
+menugaskan kembali sebuah variabel ke sting yang lain. 
+nilai yang baru akan terkait dengan nilai sebelumnya atau 
+untuk mengubah string yang benar-benar berbeda untuk 
+disatukan sebagai kesatuan.
 
-    contoh :
+contoh :
+	
+	variabel_string1 = 'This is a variable with String data type value'
+	variabel_string2 = "This is a variable with String data type value to"
 
-        print(variabelString1, ", and", variabelString2)
-
-    atau
-
-        var1 = 'Hello World!'
-        print ("Updated String :-", var1[:6] + 'Python')
-
-    ketika kode diekdekusi, layar akan menampilkan :
-    
-        Updated String :- Hello Python
-    
-    bukan lagi Hello World!
-    """
-    )
     print(variabelString1, ", and", variabelString2)
-    print("\n", "#" * 50, "\n")
 
+atau
+
+	var1 = 'Hello World!'
+	print ("Updated String :-", var1[:6] + 'Python')
+
+ketika kode diekdekusi akan menampilkan :
+    """
+    )
+    
+    variabel_string1 = 'This is a variable with String data type value'
+    variabel_string2 = "This is a variable with String data type value to"
+    
+    print(variabel_string1, ", and", variabel_string2)
+    
     var1 = 'Hello World!'
     print ("Updated String :-", var1[:6] + 'Python')
+    print("bukan lagi Hello World!")
 
-# 3
-# updatingString()
 
-def escapeCharacter():
-    sparator("Escape Character")
+
+def escape_character():
+    sparator(" // Escape Character // ")
     print(
     """
-    mengikuti daftar dari escape character atau karakter yang 
-    tidak akan ditampilkan pada layar bisa diwakili dengan 
-    menggunakan tanda backslash notation (\). 
+mengikuti daftar dari escape character atau karakter yang 
+tidak akan ditampilkan pada layar bisa diwakili dengan 
+menggunakan tanda backslash notation (\). 
 
-    escape character akan ditafsirkan dengan menggunakan 
-    tanda petik satu atau tanda petik dua.
+escape character akan ditafsirkan dengan menggunakan 
+tanda petik satu atau tanda petik dua.
 
-    Backslash notation  Hexadecimal character   Description
-    a                   0x07                    Bell or alert
-    b                   0x08                    Backspace
-    \cx                                         Control-x
-    \C-x                                        Control-x
-    \e                  0x1b                    Escape
-    \f                  0x0c                    Formfeed
-    \M-\C-x                                     Meta-Control-x
-    \n                  0x0a                    Newline
-    \nnn                                        Octal  notation,  where  n  is  in  the  range 0.7
-    \r                  0x0d                    Carriage return
-    \s                  0x20                    Space
-    \t                  0x09                    Tab
+- Backslash notation
+- Hexadecimal character
+- Description
+
+\a
+0x07
+Bell or alert
+
+\b
+0x08
+Backspace
+
+\cx
+null
+Control-x
+
+\C-x
+null
+Control-x
+
+\e
+0x1b
+Escape
+
+\f
+0x0c
+Formfeed
+
+\M-\C-x
+null
+Meta-Control-x
+
+\n
+0x0a
+Newline
+
+\nnn
+null
+Octal notation, where n is in the range 0.7
+
+\r
+0x0d
+Carriage return
+
+\s
+0x20
+Space
+
+\t
+0x09
+Tab
+    """
+    )
+    
+
+
+def string_special_operator():
+    sparator(" // String Special Operator // ")
+    print(
+    """
+asumsikan variabel a hadalah 'Hello' 
+and variabel b adalah 'Python'.
+
+
+Operator : 
+	+ (Concatenation/menggabungkan)
+Deskripsi :
+	Menambahkan nilai di kedua sisi operator
+Contoh :
+	a + b akan menghasilkan HelloPython
+
+
+
+Operator :
+	* (Repetition/pengulangan)
+Description :
+	menggabungkan beberapa salinan dari string yang sama
+	(membuat string baru)
+Example :
+	a * 2 akan menghasilkan HelloHello
+
+
+Operator :
+	[] (Slice/iris)
+Description :
+	memberi karakter dari indeks yang diberikan
+Example :
+	a[1]  akan menghasilkan karakter e
+
+
+
+Operator :
+	* (Range Slice/mengiris urutan)
+Description :
+	 menghasilkan urutan karakter yang diiris 
+Example :
+	a[1:4] akan menghasilkan ell
+
+
+
+Operator :
+	* (Repetition/pengulangan)
+Description :
+	menggabungkan beberapa salinan dari string yang sama
+	(membuat string baru)
+Example :
+	
+	a * 2 akan menghasilkan HelloHello
+
+
+
+Operator :
+	* (Repetition/pengulangan)
+Description :
+	menggabungkan beberapa salinan dari string yang sama
+	(membuat string baru)
+Example :
+	a * 2 akan menghasilkan HelloHello
+
+
+
+Operator :
+	* (Repetition/pengulangan)
+Description :
+	menggabungkan beberapa salinan dari string yang sama
+	(membuat string baru)
+Example :
+	a * 2 akan menghasilkan HelloHello
+
+
+
+Operator :
+	* (Repetition/pengulangan)
+Description :
+	menggabungkan beberapa salinan dari string yang sama
+	(membuat string baru)
+Example :
+	a * 2 akan menghasilkan HelloHello
     """
     )
 
-# 4
-# escapeCharacter()
-
-def stringSpecialOperator():
-    sparator("String Special Operator")
-    print(
-    """
-    asumsikan variabel a hadalah 'Hello' 
-    and variabel b adalah 'Python', then-
-
-
-    Operator    Description                             Example
-
-    +           Concatenation - Adds values on          a + b will give
-                either side of the operator             HelloPython
-
-    *           Repetition - Creates  new  strings,     a*2 will give -
-                concatenating multiple copies of        HelloHello
-                the same string                         
-                
-    []          Slice - Gives the character from        a[1] will give e
-                the givenindex                          
-
-    [ : ]       Range Slice - Gives the characters      a[1:4] will give ell
-                from  the  given range                  
-                
-    in          Membership - Returns true if            H in a will give 1
-                a character exists in 
-                the given string  
-                
-    not in      Membership - Returns true if            M not in a will give 1
-                a character does not exist in 
-                the given string        
-                
-    r/R         Raw String - Suppresses actual          print  r'\n'  prints \n and print R'\n'prints \n
-                meaning of Escape characters.           
-                The syntax for raw strings is exactly 
-                the same as for normal strings 
-                with the exception of the raw  string  
-                operator,  the  letter  "r,"  
-                which  precedes the quotation marks. 
-                The "r" can be lowercase (r) or uppercase  
-                (R)  and  must  be  placed  immediately 
-                preceding the first quote mark.
-                
-    %           Format - Performs String formatting     See next section         
-    """
-    )
 
 # 5
 # stringSpecialOperator()
