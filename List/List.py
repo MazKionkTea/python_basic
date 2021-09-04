@@ -1,75 +1,70 @@
-def sparator(arg=""):
-	print("\n", arg.center(59,"#"), "\n")
-#sparator()
+def sparator(arg = "#"):
+    print("\n" * 3)
+    print("#".center(59, "#"))
+    print(arg.center(59, "#"))
+    print("#".center(59, "#"))
+
+
 
 def overview():
 	sparator(" // List // ")
-	print(
-	"""
-Struktur data yang paling mendasar di Python adalah urutannya/sequence. 
-Setiap elemen urutan diberi nomor/ posisinya atau indeksnya. 
-Indeks pertama adalah nol, indeks kedua adalah satu, dan seterusnya.
+	print('''
+    Struktur data yang paling mendasar di Python adalah urutannya/sequence. 
+    Setiap elemen urutan diberi nomor/ posisinya atau indeksnya. 
+    Indeks pertama adalah nol, indeks kedua adalah satu, dan seterusnya.
 
-Python memiliki enam jenis built-in method sequence/urutan, 
-dan yang paling umum adalah daftar/list dan tuple, 
-yang akan kita lihat dalam tutorial ini.
+    Python memiliki enam jenis built-in method sequence/urutan, 
+    dan yang paling umum adalah daftar/list dan tuple, 
+    yang akan kita lihat dalam tutorial ini.
 
-Ada beberapa hal yang bisa Anda lakukan dengan semua jenis urutan. 
-Operasi ini meliputi pengindeksan (indexing), pengiris (slice), 
-penambahan (adding), perkalikan (multiplying), dan periksa 
-keanggotaan (membership). Selain itu, 
-Python memiliki fungsi built-in untuk menemukan panjang urutan 
-dan untuk menemukan elemen terbesar dan terkecil.
-	"""
-	)
+    Ada beberapa hal yang bisa Anda lakukan dengan semua jenis urutan. 
+    Operasi ini meliputi pengindeksan (indexing), pengiris (slice), 
+    penambahan (adding), perkalikan (multiplying), dan periksa 
+    keanggotaan (membership). Selain itu, 
+    Python memiliki fungsi built-in untuk menemukan panjang urutan 
+    dan untuk menemukan elemen terbesar dan terkecil.
+	''')
 
-#overview()
 
 
 def pythonList():
 	sparator(" // Python Lists // ")
-	print(
-	"""
-List/Daftar ini adalah tipe data versatile/paling serbaguna 
-yang tersedia di Python, yang dapat ditulis sebagai daftar nilai 
-yang dipisahkan oleh tanda koma nilainya (item) dimasukan 
-dalam braket persegi. Hal yang penting tentang list adalah 
-item/value dalam list tidak perlu menggunakan jenis tipe data yang sama.
+	print('''
+    List/Daftar ini adalah tipe data versatile/paling serbaguna 
+    yang tersedia di Python, yang dapat ditulis sebagai daftar nilai 
+    yang dipisahkan oleh tanda koma nilainya (item) dimasukan 
+    dalam braket persegi. Hal yang penting tentang list adalah 
+    item/value dalam list tidak perlu menggunakan jenis tipe data yang sama.
 
-Membuat daftar sama sederhana seperti memasukkan nilai yang 
-dipisahkan koma yang dimasukan kedalam  tanda kurung square. Misalnya-
+    Membuat daftar sama sederhana seperti memasukkan nilai yang 
+    dipisahkan koma yang dimasukan kedalam  tanda kurung square. Misalnya-
 
-    list1 = ['physics', 'chemistry', 1997, 2000];
-    list2 = [1, 2, 3, 4, 5 ];
-    list3 = ["a", "b", "c", "d"];
+        list1 = ['physics', 'chemistry', 1997, 2000];
+        list2 = [1, 2, 3, 4, 5 ];
+        list3 = ["a", "b", "c", "d"];
 
-Mirip dengan tipe data string, daftar indeks mulai dari 0, 
-dan daftar bisa diiris, digabungkan dan sebagainya.
-	"""
-	)
-
-#pythonList()
+    Mirip dengan tipe data string, daftar indeks mulai dari 0, 
+    dan daftar bisa diiris, digabungkan dan sebagainya.
+	''')
 
 
 
-def accsessingList():
+def accsessing_list():
 	sparator(" // Accessing Values in Lists // ")
-	print(
-	"""
-Untuk mengakses nilai dalam list, gunakan tanda kurung square 
-untuk diiris beserta indeksnya atau indeks untuk mendapatkan 
-nilai yang tersedia pada indeks itu. Misalnya-
+	print('''
+    Untuk mengakses nilai dalam list, gunakan tanda kurung square 
+    untuk diiris beserta indeksnya atau indeks untuk mendapatkan 
+    nilai yang tersedia pada indeks itu. Misalnya-
 
-    #!/usr/bin/python3
-    list1 = ['physics', 'chemistry', 1997, 2000]
-    list2 = [1, 2, 3, 4, 5, 6, 7 ]
+        #!/usr/bin/python3
+        list1 = ['physics', 'chemistry', 1997, 2000]
+        list2 = [1, 2, 3, 4, 5, 6, 7 ]
 
-    print ("list1[0]: ", list1[0])
-    print ("list2[1:5]: ", list2[1:5])
+        print ("list1[0]: ", list1[0])
+        print ("list2[1:5]: ", list2[1:5])
 
-Bila kode di atas dieksekusi, ia menghasilkan hasil berikut :
-	"""
-	)
+    Bila kode di atas dieksekusi, ia menghasilkan hasil berikut :
+	''')
 
 	#!/usr/bin/python3
     	list1 = ['physics', 'chemistry', 1997, 2000]
@@ -78,31 +73,25 @@ Bila kode di atas dieksekusi, ia menghasilkan hasil berikut :
     	print ("list1[0]: ", list1[0])
     	print ("list2[1:5]: ", list2[1:5])
 
-#accsessingList()
 
 
+def updating_list():
+    sparator(" // Updating Lists // ")
+    print('''
+    Kita dapat memperbarui elemen tunggal atau beberapa elemen list 
+    dari dengan memberi irisan di sisi kiri operator penugasan, 
+    dan Kita dapat menambahkan ke elemen dalam list dengan menggunakan 
+    method Append(). Sebagai contoh :
 
+        #!/usr/bin/python3
+        list = ['physics', 'chemistry', 1997, 2000]
+        print ("Value available at index 2 : ", list[2])
+        list[2] = 2001
+        print ("New value available at index 2 : ", list[2])
 
-
-def updatingList():
-    	sparator(" // Updating Lists // ")
-	print(
-	"""
-Kita dapat memperbarui elemen tunggal atau beberapa elemen list 
-dari dengan memberi irisan di sisi kiri operator penugasan, 
-dan Kita dapat menambahkan ke elemen dalam list dengan menggunakan 
-method Append(). Sebagai contoh :
-
-    #!/usr/bin/python3
-    list = ['physics', 'chemistry', 1997, 2000]
-    print ("Value available at index 2 : ", list[2])
-    list[2] = 2001
-    print ("New value available at index 2 : ", list[2])
-
-Catatan: Metode Append () dibahas di bagian selanjutnya.
-Bila kode di atas dieksekusi, ia menghasilkan berikut :
-	"""
-	)
+    Catatan: Metode Append () dibahas di bagian selanjutnya.
+    Bila kode di atas dieksekusi, ia menghasilkan berikut :
+	''')
 
 	#!/usr/bin/python3
     list = ['physics', 'chemistry', 1997, 2000]
@@ -110,30 +99,26 @@ Bila kode di atas dieksekusi, ia menghasilkan berikut :
     list[2] = 2001
     print ("New value available at index 2 : ", list[2])
 
-#updatingList()
 
 
+def deleting_list():
+    sparator(" // Delete List Elements // ")
+    print('''
+    Untuk menghapus elemen list, Kita dapat menggunakan 
+    statement/pernyataan DEL (del) jika Kita tahu persis 
+    elemen mana yang akan dihapus. Kita dapat menggunakan 
+    metode Remove() jika Kita tidak tahu persis 
+    item mana yang akan dihapus. Misalnya :
 
-def deletingList():
-    	sparator(" // Delete List Elements // ")
-	print(
-	"""
-Untuk menghapus elemen list, Kita dapat menggunakan 
-statement/pernyataan DEL (del) jika Kita tahu persis 
-elemen mana yang akan dihapus. Kita dapat menggunakan 
-metode Remove() jika Kita tidak tahu persis 
-item mana yang akan dihapus. Misalnya :
+        #!/usr/bin/python3
+        list = ['physics', 'chemistry', 1997, 2000]
+        print (list)
+        del list[2]
+        print ("After deleting value at index 2 : ", list)
 
-    #!/usr/bin/python3
-    list = ['physics', 'chemistry', 1997, 2000]
-    print (list)
-    del list[2]
-    print ("After deleting value at index 2 : ", list)
-
-Bila kode di atas dieksekusi, ia menghasilkan berikut :
-CATATAN: remove() Metode dibahas di bagian selanjutnya.
-	"""
-	)
+    Bila kode di atas dieksekusi, ia menghasilkan berikut :
+    CATATAN: remove() Metode dibahas di bagian selanjutnya.
+	''')
 
 	#!/usr/bin/python3
     list = ['physics', 'chemistry', 1997, 2000]
@@ -141,99 +126,99 @@ CATATAN: remove() Metode dibahas di bagian selanjutnya.
     del list[2]
     print ("After deleting value at index 2 : ", list)
 
-#deletingList()
 
 
-def listOperation():
-    	sparator(" // Basic List Operations // ")
-	print(
-	"""
-List merespons operator + dan * seperti string; 
-Mereka berarti perpecahan dan pengulangan di sini juga, 
-kecuali hasilnya adalah list baru, bukan string. 
+def list_operation():
+    sparator(" // Basic List Operations // ")
+    print('''
+    List merespons operator + dan * seperti string; 
+    Mereka berarti perpecahan dan pengulangan di sini juga, 
+    kecuali hasilnya adalah list baru, bukan string. 
 
-Sebenarnya, list menanggapi semua operasi urutan umum 
-yang kami gunakan pada senar di bab sebelumnya.
+    Sebenarnya, list menanggapi semua operasi urutan umum 
+    yang kami gunakan pada senar di bab sebelumnya.
 
-Python Expression    		Results    							Description
-len([1, 2, 3])    			3    								Length
-[1, 2, 3] + [4, 5, 6]    	[1, 2, 3, 4, 5, 6]   	 			Concatenation
-['Hi!'] * 4    				['Hi!', 'Hi!', 'Hi!', 'Hi!']    	Repetition
-3 in [1, 2, 3]    			True   								Membership
-for x in [1,2,3]:
-    print (x,end=' ')   	1 2 3    							Iteration
-	"""
-	)
-    
-#listOperation()
+    Python Expression    	Results    			Description
+    len([1, 2, 3])    		3    				Length
+    [1, 2, 3] + [4, 5, 6]    	[1, 2, 3, 4, 5, 6]   	 	Concatenation
+    ['Hi!'] * 4    		['Hi!', 'Hi!', 'Hi!', 'Hi!']    Repetition
+    3 in [1, 2, 3]    		True   				Membership
+    for x in [1,2,3]:
+        print (x,end=' ')   	1 2 3    			Iteration
+	''')
+  
 
 
-def builtInMethod():
-	sparator(" // Indexing, Slicing and Matrixes // ")
-    	print(
-	"""
-Karena list adalah urutan, pengindeksan dan irisan kerja sama 
-jalan untuk list seperti yang dilakukan pada string.
+def built_in_method():
+    sparator(" // Indexing, Slicing and Matrixes // ")
+    print('''
+    Karena list adalah urutan, pengindeksan dan irisan kerja sama 
+    jalan untuk list seperti yang dilakukan pada string.
 
-Dengan asumsi input berikut :
+    Dengan asumsi input berikut :
 
-L=['C++'', 'Java', 'Python']
+    L=['C++'', 'Java', 'Python']
 
-Python Expression    Results    Description
-L[2]    'Python'    Offsets start at zero
-L[-2]    'Java'    Negative: count from the right
-L[1:]    ['Java', 'Python']    Slicing fetches sections
+    Python Expression    Results    Description
+    L[2]    'Python'    Offsets start at zero
+    L[-2]    'Java'    Negative: count from the right
+    L[1:]    ['Java', 'Python']    Slicing fetches sections
 
 
-    // Built-in List Functions & Methods //
+        // Built-in List Functions & Methods //
 
-[ 1 ] cmp(list1, list2)
-Tidak lagi tersedia di Python 3.
+    [ 1 ] cmp(list1, list2)
+    Tidak lagi tersedia di Python 3.
 
-[ 2 ] len(list) ]
-Memberikan panjang total dari sebuah daftar.
+    [ 2 ] len(list) ]
+    Memberikan panjang total dari sebuah daftar.
 
-[ 3 ] max(list)
-Mengembalikan item dengan nilai maksimal dari sebuah list.
+    [ 3 ] max(list)
+    Mengembalikan item dengan nilai maksimal dari sebuah list.
 
-[ 4 ] min(list)
-Mengembalikan item dengan nilai minimal dari sebuah list.
+    [ 4 ] min(list)
+    Mengembalikan item dengan nilai minimal dari sebuah list.
 
-[ 5 ] list(seq)
-Mengkonversi tuple ke dalam list.
+    [ 5 ] list(seq)
+    Mengkonversi tuple ke dalam list.
 
 
 
-[ 1 ] list.append(obj)
-Menambahkan objek kedalam list.
+    [ 1 ] list.append(obj)
+    Menambahkan objek kedalam list.
 
-[ 2 ] list.count(obj)
-Menghitung jumlah berapa kali obj terjadi dalam list.
+    [ 2 ] list.count(obj)
+    Menghitung jumlah berapa kali obj terjadi dalam list.
 
-[ 3 ] list.extend(seq)
-Menambahkan seq/urutan kedalam list.
+    [ 3 ] list.extend(seq)
+    Menambahkan seq/urutan kedalam list.
 
-[ 4 ] list.index(obj)
-Mengembalikan indeks terendah dalam daftar yang ditunjukkan oleh Obj
+    [ 4 ] list.index(obj)
+    Mengembalikan indeks terendah dalam daftar yang ditunjukkan oleh Obj
 
-[ 5 ] list.insert(index, obj)
-Menyisipkan Objek ke dalam list di Index pengganti.
+    [ 5 ] list.insert(index, obj)
+    Menyisipkan Objek ke dalam list di Index pengganti.
 
-[ 6 ] list.pop(obj=list[-1])
-Menghilangkan dan mengembalikan objek terakhir dari list.
+    [ 6 ] list.pop(obj=list[-1])
+    Menghilangkan dan mengembalikan objek terakhir dari list.
 
-[ 7 ] list.remove(obj)
-Menghilangkan objek dari list
+    [ 7 ] list.remove(obj)
+    Menghilangkan objek dari list
 
-[ 8 ]list.reverse()
-Membalikan objek list dari tempatnya.
+    [ 8 ]list.reverse()
+    Membalikan objek list dari tempatnya.
 
-[ 9 ] list.sort([func])
-Mengurutkan  objek dalam list, gunakan fungsi komparasi func  jika diberikan.
-	"""
-	)
+    [ 9 ] list.sort([func])
+    Mengurutkan  objek dalam list, gunakan fungsi komparasi func  jika diberikan.
+	''')
 
-builtInMethod()
+
+
+def sparator(arg = "#"):
+    print("\n" * 3)
+    print("#".center(59, "#"))
+    print(arg.center(59, "#"))
+    print("#".center(59, "#"))
 
 
 
@@ -242,7 +227,7 @@ list2 = [1, 2, 3, 4, 5 ]
 list3 = ["a", "b", "c", "d"]
 
 # Basic list
-def contoh1():
+def basic_list():
     sparator("// Basic List //")
     list1 = ['physics', 'chemistry', 1997, 2000]
     list2 = [1, 2, 3, 4, 5 ]
@@ -250,10 +235,11 @@ def contoh1():
     
     print(f"{list1}, \n, {list2}, \n, {list3}")
     print(list1, list2, list3)
-#contoh1()
+
+
 
 # Accessing Values in Lists
-def contoh2():
+def accsessing_value():
     sparator("// Accessing Value //")
     #!/usr/bin/python3
     list1 = ['physics', 'chemistry', 1997, 2000]
@@ -261,54 +247,60 @@ def contoh2():
     
     print ("list1[0]: ", list1[0])
     print ("list2[1:5]: ", list2[1:5])
-#contoh2()
+
+
 
 # Updating list
-def contoh3():
+def updating_list():
     sparator("// Updating List //")
     #!/usr/bin/python3
     list = ['physics', 'chemistry', 1997, 2000]
     print ("Value available at index 2 : ", list[2])
     list[2] = 2001
     print ("New value available at index 2 : ", list[2])
-#contoh3()
+
+
 
 # Delete List Elements
-def contoh4():
+def deleting_list():
 	sparator(" // Deleting List//")
 	#!/usr/bin/python3
 	list = ['physics', 'chemistry', 1997, 2000]
 	print (list)
 	del list[2]
 	print ("After deleting value at index 2 : ", list)
-#contoh4()
+
+
 
 # Basic list operator
-def contoh5():
+def list_length():
 	sparator(" // Length // ")
 	list = [1, 2, 3]
 	print(len(list))
 	# printning length of a list
-#contoh5()
 
-def contoh6():
+
+
+def list_concatination():
 	sparator(" // Concatination List // ")
 	list1 = [1, 2 ,3]
 	list2 = [4, 5, 6]
 	concate = list1 + list2
 	print(concate)
 	# concatination list1 & list2-
-#contoh6()
 
-def contoh7():
+
+
+def list_repetition():
 	sparator(" // Repetition // ")
 	list = ["Hi !"]
 	repetition = list * 4
 	print(repetition)
 	# repetition a list with multiply oprator
-#contoh7()
 
-def contoh8():
+
+
+def list_membership():
 	sparator(" // Membership // ")
 	list = [1, 2, 3]
 	if 3 in list:
@@ -316,18 +308,19 @@ def contoh8():
 	else:
 		print(False)
 	# check Membership of a list with decicion making
-#contoh8()
 
-def contoh9():
+
+
+def list_iteration():
 	sparator(" // Iteration // ")
 	list = [1, 2, 3]
 	for x in list:
 		print(x)
 	# 1 2 3 Iteration a list with loop
-#contoh9()
+
 
 # Indexing, Slicing and Matrixes
-def contoh10():
+def indexing_slice():
 	sparator( " // Indexing, Slice & Matrix // ")
 	L = ["C++",  "Java", "Python"]
 	offset = L [2]
@@ -337,7 +330,11 @@ def contoh10():
 	slice = L[1:]
 	#Slicing fetches sections
 	print(f"\n Offset = {offset} \n Negative = {negative} \n Slica = {slice}")
-#contoh10()
+
+
+
+
+
 
 # Built-in List Functions & Methods 
 
