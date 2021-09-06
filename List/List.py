@@ -226,6 +226,8 @@ list1 = ['physics', 'chemistry', 1997, 2000]
 list2 = [1, 2, 3, 4, 5 ]
 list3 = ["a", "b", "c", "d"]
 
+
+
 # Basic list
 def basic_list():
     sparator("// Basic List //")
@@ -281,6 +283,7 @@ def list_length():
 
 
 
+# List Concatination
 def list_concatination():
 	sparator(" // Concatination List // ")
 	list1 = [1, 2 ,3]
@@ -291,6 +294,7 @@ def list_concatination():
 
 
 
+# List Repetition
 def list_repetition():
 	sparator(" // Repetition // ")
 	list = ["Hi !"]
@@ -300,6 +304,7 @@ def list_repetition():
 
 
 
+# List Membership
 def list_membership():
 	sparator(" // Membership // ")
 	list = [1, 2, 3]
@@ -311,12 +316,14 @@ def list_membership():
 
 
 
+# List Iteration
 def list_iteration():
 	sparator(" // Iteration // ")
 	list = [1, 2, 3]
 	for x in list:
 		print(x)
 	# 1 2 3 Iteration a list with loop
+
 
 
 # Indexing, Slicing and Matrixes
@@ -343,36 +350,32 @@ def indexing_slice():
 
 #	len(list)
 # Memberikan panjang total dari sebuah daftar.
-def builtIn1():
+def list_len():
 	sparator(" // Built-in len() Method // ")
-	print(
-	"""
-- len() Method
-Deskripsi :
-Metode len() mengembalikan jumlah elemen dalam daftar.
+	print('''
+    Deskripsi :
+    
+        Metode len() mengembalikan jumlah elemen dalam daftar.
 
-Sintaks :
-- len(list)
+    Sintaks :
+    
+        len(list)
 
-Parameter :
-- list (adalah daftar/jumlah elemen yang akan dihitung).
-	"""
-	)
-	
-	print(
-	"""
-Contoh :
+    Parameter :
+    
+        list (adalah daftar/jumlah elemen yang akan dihitung).
 
-	#!/usr/bin/python3
-	list1 = ['physics', 'chemistry', 'maths']
-	print (len(list1))
-	list2=list(range(5))
-	# creates list of numbers between 0-4 print
-	(len(list2)) 
-	
+    Contoh :
 
-	"""
-	)
+        #!/usr/bin/python3
+        list1 = ['physics', 'chemistry', 'maths']
+        print (len(list1))
+        list2=list(range(5))
+        # creates list of numbers between 0-4 print
+        (len(list2))
+    
+    ketika kode dieksekusi akan menghasilkan :
+	''')
 	
 	#!/usr/bin/python3
 	list1 = ['physics', 'chemistry', 'maths']
@@ -380,127 +383,118 @@ Contoh :
 	list2=list(range(5))
 	# creates list of numbers between 0-4 
 	print(len(list2))
-	
-#builtIn1()
+
 
 
 # max(list)
 # Mengembalikan item dengan nilai maksimal dari sebuah list.
-def builtIn2():
-	sparator(" Built-in max() Method ")
-	print(
-	"""
-Deskripsi :
-Method max() mengembalikan nilai maksimum/tertinggi dari sebuah list 
-entah itu jumlah string, angka, dll.
+def list_max():
+	sparator(" // Built-in max() Method // ")
+	print('''
+    Deskripsi :
 
-Sintaks :
-- max(list)
+        Method max() mengembalikan nilai maksimum/tertinggi dari sebuah list 
+        entah itu jumlah string, angka, dll.
 
-Parameter :
-- list (adalah daftar/jumlah elemen yang akan dihitung)
-	"""
-	)
-	
-	print(
-	"""
-Contoh :
+    Sintaks :
+        
+        max(list)
+
+    Parameter :
+        
+        list (adalah daftar/jumlah elemen yang akan dihitung)
+
+    Contoh :
+        
+        #!/usr/bin/python3
+        list1, list2 = ['C++','Java', 'Python'], [456, 700, 200]
+        print ("Max value element : ", max(list1))
+        print ("Max value element : ", max(list2))
+        
+    ketika program dijalankan akan menghasilkan :
+	''')
 	
 	#!/usr/bin/python3
 	list1, list2 = ['C++','Java', 'Python'], [456, 700, 200]
 	print ("Max value element : ", max(list1))
 	print ("Max value element : ", max(list2))
-	
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
-	
-	#!/usr/bin/python3
-	list1, list2 = ['C++','Java', 'Python'], [456, 700, 200]
-	print ("Max value element : ", max(list1))
-	print ("Max value element : ", max(list2))
 
-#builtIn2()
 
 
 # min(list)
 # Mengembalikan item dengan nilai minimum dari sebuah list.
-def builtIn3():
-	sparator(" Built-in min() Method ")
+def list_min():
+	sparator(" // Built-in min() Method // ")
 	print(
 	"""
-Deskripsi :
-Method min() mengembalikan nilai minimum/terendah dari sebuah list 
-entah itu jumlah string, angka, dll.
+    Deskripsi :
+    
+        Method min() mengembalikan nilai minimum/terendah dari sebuah list 
+        entah itu jumlah string, angka, dll.
 
-Sintaks :
-- min(list)
+    Sintaks :
+        
+        min(list)
 
-Parameter :
-- list (adalah daftar/jumlah elemen yang akan dihitung)
+    Parameter :
+        
+        list (adalah daftar/jumlah elemen yang akan dihitung)
+
+    Contoh :
+	
+        #!/usr/bin/python3
+        list1, list2 = ['C++','Java', 'Python'], [456, 700, 200]
+        print ("Min value element : ", min(list1))
+        print ("Min value element : ", min(list2))
+	
+    ketika program dijalankan akan menghasilkan :
 	"""
 	)
-	
-	print(
-	"""
-Contoh :
 	
 	#!/usr/bin/python3
 	list1, list2 = ['C++','Java', 'Python'], [456, 700, 200]
 	print ("Min value element : ", min(list1))
 	print ("Min value element : ", min(list2))
-	
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
-	
-	#!/usr/bin/python3
-	list1, list2 = ['C++','Java', 'Python'], [456, 700, 200]
-	print ("Min value element : ", min(list1))
-	print ("Min value element : ", min(list2))
 
-#builtIn3()
 
 
 # list(seq)
 # Mengkonversi tuple ke dalam list.
-def builtIn4():
+def list_list():
 	sparator(" // Built-in list() Method // ")
-	print(
-	"""
-Deskripsi :
-Method list() mengambil jenis urutan dan mengubahnya menjadi list.
-Ini digunakan untuk mengubah tupel tertentu ke dalam list.
+	print('''
+    Deskripsi :
+    
+        Method list() mengambil jenis urutan dan mengubahnya menjadi list.
+        Ini digunakan untuk mengubah tupel tertentu ke dalam list.
 
-Catatan: Tuple sangat mirip dengan list perbedaannya hanya
-nilai elemen dari tipe data tupel tidak dapat diubah dan
-elemen tuple diletakkan antara tanda kurung, bukan braket persegi.
-Fungsi ini juga mengubah karakter dalam string menjadi list.
+        Catatan: Tuple sangat mirip dengan list perbedaannya hanya
+        nilai elemen dari tipe data tupel tidak dapat diubah dan
+        elemen tuple diletakkan antara tanda kurung, bukan braket persegi.
+        Fungsi ini juga mengubah karakter dalam string menjadi list.
 
-Sintaks :
-- list(seq)
+    Sintaks :
+        
+        list(seq)
 
-Parameter :
-- seq (adalah tuple atau string yang akan diubah menjadi list)
-Catatan : tipe datanya sebuah urutan (sequence)
-	"""
-	)
+    Parameter :
+        
+        seq (adalah tuple atau string yang akan diubah menjadi list)
+        Catatan : tipe datanya sebuah urutan (sequence)
+
+    Contoh :
 	
-	print(
-	"""
-Contoh :
+        #!/usr/bin/python3
+        aTuple = (123, 'C++', 'Java', 'Python')
+        list1 = list(aTuple)
+        print ("List elements : ", list1)
+        str="Hello World"
+        list2=list(str)
+        print ("List elements : ", list2) 
 	
-	#!/usr/bin/python3
-	aTuple = (123, 'C++', 'Java', 'Python')
-	list1 = list(aTuple)
-	print ("List elements : ", list1)
-	str="Hello World"
-	list2=list(str)
-	print ("List elements : ", list2) 
-	
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
+    ketika program dijalankan akan menghasilkan :
+
+	''')
 	
 	#!/usr/bin/python3
 	aTuple = (123, 'C++', 'Java', 'Python')
@@ -509,120 +503,106 @@ Saat program di atas dijalankan, menghasilkan - \n
 	str="Hello World"
 	list2=list(str)
 	print ("List elements : ", list2) 
-
-#builtIn4()
-
-
 
 
 
 # list.append(obj)
 # Menambahkan objek kedalam list.
-def builtIn5():
+def list_append():
 	sparator(" // Built-in list.append() Method // ")
-	print(
-	"""
-Deskripsi :
-Method Append() akan menambahkan obj sebelah kanan kedalam list yang ada.
+	print('''
+    Deskripsi :
 
-Sintaks :
-- list.append(obj)
+        Method Append() akan menambahkan obj sebelah kanan kedalam list yang ada.
 
-Parameter :
-- obj (objek yang akan ditambahkan dalam list).
-	"""
-	)
-	
-	print(
-	"""
-Contoh :
+    Sintaks :
+        
+        list.append(obj)
+
+    Parameter :
+        
+        obj (objek yang akan ditambahkan dalam list).
+
+    Contoh :
+        
+        #!/usr/bin/python3
+        list1 = ['C++', 'Java', 'Python']
+        list1.append('C#')
+        print("updated list : ", list1) 
+        
+    ketika program dijalankan akan menghasilkan :
+	''')
 	
 	#!/usr/bin/python3
 	list1 = ['C++', 'Java', 'Python']
 	list1.append('C#')
 	print("updated list : ", list1) 
-	
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
-	
-	#!/usr/bin/python3
-	list1 = ['C++', 'Java', 'Python']
-	list1.append('C#')
-	print("updated list : ", list1) 
 
-#builtIn5()
 
 
 # list.count(obj)
 # Menghitung jumlah berapa kali obj terjadi dalam list.
-def builtIn6():
+def list_count():
 	sparator(" // Built-in list.count() Method // ")
-	print(
-	"""
-Deskripsi :
-Method count() mengembalikan jumlah berapa banyak obj yang sama dalam list. obj bisa berupa string, number, karakter string, dll.
+	print('''
+    Deskripsi :
+    
+        Method count() mengembalikan jumlah berapa banyak obj yang sama dalam list.
+        obj bisa berupa string, number, karakter string, dll.
 
-Sintaks :
-list.count(obj)
-	
-Parameter :
-- obj (objek yang akan ditambahkan dalam list).
-	"""
-	)
-	
-	print(
-	"""
-Contoh :
-	
-	#!/usr/bin/python3
-	aList = [123, 'xyz', 'zara', 'abc', 123]
-	print ("Count for 123 : ", aList.count(123))
-	print ("Count for zara : ", aList.count('zara')) 
-	
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
+    Sintaks :
+    
+        list.count(obj)
+        
+    Parameter :
+        
+        obj (objek yang akan ditambahkan dalam list).
+        
+    Contoh :
+        
+        #!/usr/bin/python3
+        aList = [123, 'xyz', 'zara', 'abc', 123]
+        print ("Count for 123 : ", aList.count(123))
+        print ("Count for zara : ", aList.count('zara')) 
+        
+    ketika program dijalankan akan menghasilkan :
+	''')
 	
 	#!/usr/bin/python3
 	aList = [123, 'xyz', 'zara', 'abc', 123]
 	print ("Count for 123 : ", aList.count(123))
 	print ("Count for zara : ", aList.count('zara')) 
 
-builtIn6()
 
 
 # list.extend(seq)
 # Menambahkan seq/urutan kedalam list.
-def builtIn7():
+def list_extend():
 	sparator(" // Built-in list.extend() Method // ")
-	print(
-	"""
-Deskripsi :
-Method extend() Menambahkan isi seq/urutan untuk list.
+	print('''
+    Deskripsi :
+        
+        Method extend() Menambahkan isi seq/urutan untuk list.
 
-Sintaks :
-- list.extend(seq)
+    Sintaks :
+        
+        list.extend(seq)
 
-Parameter :
-- seq (urutan yang akan ditambahkan kedalam list)
-	"""
-	)
-	
-	print(
-	"""
-Contoh :
-	
-	#!/usr/bin/python3
-	list1 = ['physics', 'chemistry', 'maths']
-	list2=list(range(5))
-	#creates list of numbers between 0-4
-	list1.extend('Extended List :', list2)
-	print (list1) 
-	
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
+    Parameter :
+        
+        seq (urutan yang akan ditambahkan kedalam list)
+
+    Contoh :
+        
+        #!/usr/bin/python3
+        list1 = ['physics', 'chemistry', 'maths']
+        list2=list(range(5))
+        #creates list of numbers between 0-4
+        list1.extend('Extended List :', list2)
+        print (list1) 
+        
+    ketika program dijalankan akan menghasilkan :
+	''')
 	
 	#/usr/bin/python3
 	list1 = ['physics', 'chemistry', 'maths']
@@ -630,230 +610,261 @@ Saat program di atas dijalankan, menghasilkan - \n
 	#creates list of numbers between 0-4
 	list1.extend(list2)
 	print ('Extended List :', list1) 
-	
-#builtIn7()
+
 
 
 # list.index(obj)
 # Mengembalikan indeks terendah dalam daftar yang ditunjukkan oleh Obj
-def builtIn8():
+def list_index():
 	sparator(" // Built-in list.index() Method // ")
-	print(
-	"""
-Deskripsi :
-Method index() Mengembalikan indeks terendah dalam daftar yang ditunjukkan oleh Obj
+	print('''
+    Deskripsi :
+    
+        Method index() Mengembalikan indeks terendah dalam daftar
+        yang ditunjukkan oleh Obj
 
-Sintaks :
-- list.index(obj)
+    Sintaks :
+        
+        list.index(obj)
 
-Parameter :
-- obj (objek yang bisa ditemukan.)
-	"""
-	)
-	
-	print(
-	"""
-Contoh :
-	
-	#!/usr/bin/python3
-	list1 = ['physics', 'chemistry', 'maths']
-	print ('Index of chemistry', list1.index('chemistry'))
-	print ('Index of C#', list1.index('C#')) 
-	
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
+    Parameter :
+        
+        obj (objek yang bisa ditemukan.)
+
+    Contoh :
+        
+        #!/usr/bin/python3
+        list1 = ['physics', 'chemistry', 'maths']
+        print ('Index of chemistry', list1.index('chemistry'))
+        print ('Index of C#', list1.index('C#')) 
+        
+    ketika program dijalankan akan menghasilkan :
+	''')
 	
 	#!/usr/bin/python3
 	list1 = ['physics', 'chemistry', 'maths', 'C#']
 	print ('Index of chemistry', list1.index('chemistry'))
-	print ('Index of C#', list1.index('C#')) 
-	
-#builtIn8()
+	print ('Index of C#', list1.index('C#'))
+
 
 
 # list.insert(index, obj)
 # Menyisipkan Objek ke dalam list di Index pengganti.
-def builtIn9():
+def list_insert():
 	sparator(" // Built-in list.insert() Method // ")
-	print(
-	"""
-Deskripsi :
-Method insert() Mengembalikan indeks terendah dalam daftar yang ditunjukkan oleh Obj
+	print('''
+    Deskripsi :
+    
+        Method insert() Mengembalikan indeks terendah dalam daftar
+        yang ditunjukkan oleh Obj
 
-Sintaks :
-- list.insert(index, obj)
+    Sintaks :
+        
+        list.insert(index, obj)
 
-Parameter :
-- Index (ini adalah indeks dimana objek Obj perlu dimasukkan).
-- obj (objek yang dimasukkan ke dalam list untuk diisi.)
-	"""
-	)
-	
-	print(
-	"""
-Contoh :
+    Parameter :
+        
+        Index (ini adalah indeks dimana objek Obj perlu dimasukkan).
+        obj (objek yang dimasukkan ke dalam list untuk diisi.)
+
+    Contoh :
+        
+        #!/usr/bin/python3
+        list1 = ['physics', 'chemistry', 'maths']
+        list1.insert(1, 'Biology')
+        print ('Final list : ', list1) 
+        
+    ketika program dijalankan akan menghasilkan :
+	''')
 	
 	#!/usr/bin/python3
 	list1 = ['physics', 'chemistry', 'maths']
 	list1.insert(1, 'Biology')
 	print ('Final list : ', list1) 
-	
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
-	
-	#!/usr/bin/python3
-	list1 = ['physics', 'chemistry', 'maths']
-	list1.insert(1, 'Biology')
-	print ('Final list : ', list1) 
-	
-#builtIn9()
 
 
 
 # list.pop(obj=list[-1])
 # Menghilangkan dan mengembalikan nilai objek terakhir dari list.
-def builtIn10():
+def list_pop():
     sparator(" // Built-in list.pop() Method // ")
-	print(
-	"""
-Deskripsi :
-Menghilangkan dan mengembalikan nilai objek terakhir dari list.
+    print('''
+    Deskripsi :
+    
+        Menghilangkan dan mengembalikan nilai objek terakhir dari list.
 
-Sintaks :
-list.pop(obj=list[-1])
-list.pop(indeks obj)
+    Sintaks :
+        
+        list.pop(obj=list[-1])
+        list.pop(indeks obj)
 
-Parameter :
-obj (Ini adalah parameter opsional, indeks objek yang akan dihapus dari list.)
+    Parameter :
+        
+        obj (Ini adalah parameter opsional,
+        indeks objek yang akan dihapus dari list.)
 
-Contoh :
+    Contoh :
+
+        #!/usr/bin/python3
+        list1 = ['physics', 'Biology', 'chemistry', 'maths']
+        list1.pop()
+        print ("list now : ", list1)
+        list1.pop(1)
+        print ("list now : ", list1)
+
+    ketika program dijalankan akan menghasilkan :
+	''')
 
 	#!/usr/bin/python3
-	list1 = ['physics', 'Biology', 'chemistry', 'maths']
-	list1.pop()
-	print ("list now : ", list1)
-	list1.pop(1)
-	print ("list now : ", list1)
+    list1 = ['physics', 'Biology', 'chemistry', 'maths']
+    list1.pop()
+    print ("list now : ", list1)
+    list1.pop(1)
+    print ("list now : ", list1)
 
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
-
-	#!/usr/bin/python3
-	list1 = ['physics', 'Biology', 'chemistry', 'maths']
-	list1.pop()
-	print ("list now : ", list1)
-	list1.pop(1)
-	print ("list now : ", list1)
-
-#builtIn10()
 
 
 # list.remove(obj)
 # Menghilangkan objek dari list
-def builtIn11():
+def list_remove():
     sparator(" // Built-in list.remove() Method // ")
-	print(
-	"""
-Deskripsi :
-Menghilangkan objek dari list
+    print('''
+    Deskripsi :
+    
+        Menghilangkan objek dari list
 
-Sintaks :
-list.remove(obj)
+    Sintaks :
+    
+        list.remove(obj)
 
-Parameter :
-obj (objek yang akan dihilangkan dari list)
+    Parameter :
+    
+        obj (objek yang akan dihilangkan dari list)
 
-Contoh :
+    Contoh :
+
+        #!/usr/bin/python3
+        list1 = ['physics', 'Biology', 'chemistry', 'maths']
+        list1.remove('Biology')
+        print ("list now : ", list1)
+        list1.remove('maths')
+        print ("list now : ", list1)
+
+    ketika program dijalankan akan menghasilkan :
+    ''')
 
 	#!/usr/bin/python3
-	list1 = ['physics', 'Biology', 'chemistry', 'maths']
-	list1.remove('Biology')
-	print ("list now : ", list1)
-	list1.remove('maths')
-	print ("list now : ", list1)
-
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
-
-	#!/usr/bin/python3
-	list1 = ['physics', 'Biology', 'chemistry', 'maths']
-	list1.remove('Biology')
-	print ("list now : ", list1)
-	list1.remove('maths')
-	print ("list now : ", list1)
-
-#builtIn11()
+    list1 = ['physics', 'Biology', 'chemistry', 'maths']
+    list1.remove('Biology')
+    print ("list now : ", list1)
+    list1.remove('maths')
+    print ("list now : ", list1)
 
 
 
 # list.reverse()
 # Membalikan objek list dari tempatnya.
-def builtIn12():
+def list_reverse():
     sparator("// Built-in list.reverse() Method // ")
-	print(
-	"""
-Deskripsi :
-Membalikan objek list dari indeks tempatnya.
+    print('''
+    Deskripsi :
+    
+        Membalikan objek list dari indeks tempatnya.
 
-Sintaks :
-list.reverse()
+    Sintaks :
+        
+        list.reverse()
 
-Parameter :
- - 
+    Parameter :
+    
+        -
 
-Contoh :
+    Contoh :
+
+        #!/usr/bin/python3
+        list1 = ['physics', 'Biology', 'chemistry', 'maths']
+        list1.reverse()
+        print ("list now : ", list1)
+
+    ketika program dijalankan akan menghasilkan :
+	''')
 
 	#!/usr/bin/python3
-	list1 = ['physics', 'Biology', 'chemistry', 'maths']
-	list1.reverse()
-	print ("list now : ", list1)
-
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
-
-	#!/usr/bin/python3
-	list1 = ['physics', 'Biology', 'chemistry', 'maths']
-	list1.reverse()
-	print ("list now : ", list1)
-
-builtIn12()
+    list1 = ['physics', 'Biology', 'chemistry', 'maths']
+    list1.reverse()
+    print ("list now : ", list1)
 
 
 
 # list.sort([func])
 # Mengurutkan  objek dalam list, gunakan fungsi komparasi func jika diperlukan.
-def builtIn13():
+def list_sort():
 	sparator(" // Built-in list.sort() Method // ")
-	print(
-	"""
-Deskripsi :
-Mengurutkan  objek dalam list
+	print('''
+    Deskripsi :
+    
+        Mengurutkan  objek dalam list
 
-Sintaks :
-list.sort([func])
+    Sintaks :
+    
+        list.sort([func])
 
-Parameter :
+    Parameter :
 
+        -
 
-Contoh :
+    Contoh :
+
+        #!/usr/bin/python3
+        list1 = ['physics', 'Biology', 'chemistry', 'maths']
+        list1.sort()
+        print ("list now : ", list1)
+
+    ketika program dijalankan akan menghasilkan :
+	''')
 
 	#!/usr/bin/python3
 	list1 = ['physics', 'Biology', 'chemistry', 'maths']
 	list1.sort()
 	print ("list now : ", list1)
 
-Saat program di atas dijalankan, menghasilkan - \n
-	"""
-	)
 
-	#!/usr/bin/python3
-	list1 = ['physics', 'Biology', 'chemistry', 'maths']
-	list1.sort()
-	print ("list now : ", list1)
+########################################################################
 
-builtIn13()
+# Python List
+overview()
+pythonList()
+accsessing_list()
+updating_list()
+deleting_list()
+list_operation()
+built_in_method()
+
+# Basic Syntax
+basic_list()
+accsessing_value()
+updating_list()
+deleting_list()
+list_length()
+list_concatination()
+list_repetition()
+list_membership()
+list_iteration()
+indexing_slice()
+
+# Built-in Method
+list_len()      # [1]
+list_max()      # [2]
+list_min()      # [3]
+list_list()     # [4]
+list_append()   # [5]
+list_count()    # [6]
+list_extend()   # [7]
+list_index()    # [8]
+list_insert()   # [9]
+list_pop()      # [10]
+list_remove()   # [11]
+list_reverse()  # [12]
+list_sort()     # [13]
+
+########################################################################
