@@ -608,11 +608,71 @@ def dict_keys():
     sparator(" // Dictionary dict.keys() Method // ")
     print('''
     Deskripsi :
+
+        mengembalikan nilai sebagai sebuah list dari semua key yang tersedia dalam dictionary.
+
     Sintaks :
+
+        dictionary.keys()
+
     Parameter :
+
+        -
+
     Contoh :
+
+        # mengembakikan nilai key
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+        
+        x = car.keys()
+        print(x)
+
+        # ketika sebuah item ditambahkan kedalam dictionary, tampilan objek juga ikut diperbaharui.
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        x = car.keys()
+        car["color"] = "white"
+        print(x)
+
+        #!/usr/bin/python3
+        dict = {'Name': 'Zara', 'Age': 7}
+        print("Value : %s" %  dict.keys())
+
     ketika kode dijalankan akan menghasilkan :
     ''')
+    
+    # mengembakikan nilai key
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+    
+    x = car.keys()
+    print(x)
+
+    # ketika sebuah item ditambahkan kedalam dictionary, tampilan objek juga ikut diperbaharui.
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    x = car.keys()
+    car["color"] = "white"
+    print(x)
+
+    #!/usr/bin/python3
+    dict = {'Name': 'Zara', 'Age': 7}
+    print("Value : %s" %  dict.keys())
 
 
 
@@ -620,11 +680,65 @@ def dict_pop():
     sparator(" // Dictionary dict.pop() Method // ")
     print('''
     Deskripsi :
+
+        menghilangkan item secara spesifik dari sebuah dictionary
+        nilai dari item yang dihilangkan akan dikembalikan nilainya oleh method pop()
+        atau Item yang dihapus adalah nilai pengembalian metode pop():
+        
     Sintaks :
+
+        dictionary.pop(keyname, defaultvalue)
+        
     Parameter :
+
+        keyname (diperlukan, keyname dati item yang ingin dihilangkan)
+        defaultvalue (optional, sebuah nilai untuk dikembalikan jika spesifik key tadak ditemukan
+        jika parameter ini tidak spesifik dan tidak ditemukan key yang spesifik, error anan dimunculkan)
+
     Contoh :
+
+        # menghilangkan "model" dari dictionary
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        car.pop("model")
+        print(car)
+
+        # Item yang dihapus adalah nilai pengembalian metode pop():
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+        
+        x = car.pop("model")
+        print(x)
+
     ketika kode dijalankan akan menghasilkan :
     ''')
+
+    # menghilangkan "model" dari dictionary
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    car.pop("model")
+    print(car)
+
+    # nilai dari item yang dihilangkan nilainya dikembalikan oleh method pop()
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+    
+    x = car.pop("model")
+    print(x)
 
 
 
@@ -635,8 +749,49 @@ def dict_popitem():
     Sintaks :
     Parameter :
     Contoh :
+
+        # menghilangkan item terakhir dari sebuah dictionary
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        car.popitem()
+        print(car)
+
+        # Item yang dihapus adalah nilai pengembalian metode pop():
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        x = car.popitem()
+        print(x) 
+    
     ketika kode dijalankan akan menghasilkan :
     ''')
+
+    # menghilangkan item terakhir dari sebuah dictionary
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    car.popitem()
+    print(car)
+
+    # Item yang dihapus adalah nilai pengembalian metode pop():
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    x = car.popitem()
+    print(x)
 
 
 
@@ -645,10 +800,79 @@ def dict_setdefault():
     print('''
     Deskripsi :
     Sintaks :
+
+        dict.setdefault(key, default=None)
+        atau
+        dictionary.setdefault(keyname, value)
+
     Parameter :
+
+        key (key yang akan dicari)
+        default (nilai ini yang nilainya akan dikembalikan jika key tidak ditemukan)
+
+        keyname (diperlukan, keyname dari item ingin dikembalikan nilainya)
+        value (opsional, jika key ditemukan parameter ini tidak memiliki efek
+        jika key tidak ditemukan nilai ini menjadi nilai dari key)
+        nilai default adalah None
+
     Contoh :
+
+        #!/usr/bin/python3
+        dict = {'Name': 'Zara', 'Age': 7}
+        print("Value : %s" %  dict.setdefault('Age', None))
+        print("Value : %s" %  dict.setdefault('Sex', None))
+        print(dict)
+
+        # Dapatkan nilai item "Model":
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        x = car.setdefault("model", "Bronco")
+        print(x)
+
+        # Dapatkan nilai item "color", jika item "color" tidak ada,
+        # Masukkan "color" dengan nilai "white":
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        x = car.setdefault("color", "white")
+        print(x)
+
     ketika kode dijalankan akan menghasilkan :
     ''')
+
+    #!/usr/bin/python3
+    dict = {'Name': 'Zara', 'Age': 7}
+    print("Value : %s" %  dict.setdefault('Age', None))
+    print("Value : %s" %  dict.setdefault('Sex', None))
+    print(dict)
+
+    # Dapatkan nilai item "Model":
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    x = car.setdefault("model", "Bronco")
+    print(x)
+
+    # Dapatkan nilai item "color", jika item "color" tidak ada,
+    # Masukkan "color" dengan nilai "white":
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    x = car.setdefault("color", "white")
+    print(x)
 
 
 
@@ -656,11 +880,59 @@ def dict_updates():
     sparator(" // Dictionary dict.updates() Method // ")
     print('''
     Deskripsi :
+
+        memesukan item secara spesifik kedalam dictionary
+        sebuah objek iterabel dengan pasangan key dan value
+
     Sintaks :
+
+        dictionary.update(iterable)
+        atau
+        dict.update(dict)
+
     Parameter :
+
+        iterable (dictionary atau objek iterable dengan pasangan key dan value,
+        yang akan dimasukkan ke dictionary)
+
+        dict (dictionary yang akan ditambahkan)
+
     Contoh :
+
+        # memasukan sebuah item kedalam dictionary
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        car.update({"color": "White"})
+        print(car)
+
+        #!/usr/bin/python3
+        dict = {'Name': 'Zara', 'Age': 7}
+        dict2 = {'Sex': 'female' }
+        dict.update(dict2)
+        print("updated dict : ", dict)
+
     ketika kode dijalankan akan menghasilkan :
     ''')
+
+    # memasukan sebuah item kedalam dictionary
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    car.update({"color": "White"})
+    print(car)
+
+    #!/usr/bin/python3
+    dict = {'Name': 'Zara', 'Age': 7}
+    dict2 = {'Sex': 'female' }
+    dict.update(dict2)
+    print("updated dict : ", dict)
 
 
 
@@ -668,11 +940,72 @@ def dict_values():
     sparator(" // Dictionary dict.values() Method // ")
     print('''
     Deskripsi :
+
+        Mengembalikan tampilan Objek yang berisi nilai-nilai dictionary, sebagai daftar.
+        Mengembalikan daftar semua nilai yang tersedia dalam dictionary tertentu.
+
     Sintaks :
+
+        dictionary.values()
+
     Parameter :
+
+        -
+
     Contoh :
+
+        #!/usr/bin/python3
+        dict = {'Sex': 'female', 'Age': 7, 'Name': 'Zara'}
+        print("Values : ", list(dict.values()))
+        
+        # mengembalikan nilainya
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        x = car.values()
+        print(x)
+
+        # ketika sebuah nilai dalam dictionary diganti, tampilan objek juga diperbaharui.
+        car = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+        }
+
+        x = car.values()
+        car["year"] = 2018
+        print(x)
+
     ketika kode dijalankan akan menghasilkan :
     ''')
+
+    #!/usr/bin/python3
+    dict = {'Sex': 'female', 'Age': 7, 'Name': 'Zara'}
+    print("Values : ", list(dict.values()))
+    
+    # mengembalikan nilainya
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    x = car.values()
+    print(x)
+
+    # ketika sebuah nilai dalam dictionary diganti, tampilan objek juga diperbaharui.
+    car = {
+        "brand": "Ford",
+        "model": "Mustang",
+        "year": 1964
+    }
+
+    x = car.values()
+    car["year"] = 2018
+    print(x)
 
 
 ########################################################################
