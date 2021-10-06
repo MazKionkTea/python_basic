@@ -1,8 +1,8 @@
 def sparator(arg):
 	print("\n" * 3)
-	print("#".center(59, "#")
-	print(arg.center(59, "#")
-	print("#".center(59, "#")
+	print("#".center(59, "#"))
+	print(arg.center(59, "#"))
+	print("#".center(59, "#"))
 
 
 
@@ -109,7 +109,7 @@ def package():
 	sebagai contoh stukturnya sebagai berikut :
 
 		package_modu_l
-			folder_modil_1
+			folder_modul_1
 				nama_modul_1.py
 				nama_modul_2.py
 				nama_modul_3.py

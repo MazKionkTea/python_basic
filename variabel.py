@@ -11,16 +11,11 @@ Copyright (c) 2021 Copyright Holder. All rights reserved.
 
 ########################################################################
 
-def sparator(arg):
-    ''' sparator '''
-    print("#".center(72, "#"))
-    print(arg.center(72, "#"))
-    print("#".center(72, "#"))
-sparator(" // Variabel // ")
+import helper
 
-variabel1 = '''
 ########################################################################
 
+variabel1 = '''
 - Variabel
 
     variabel berfungsi untuk memesan runag pada memori yang bisa diisi
@@ -29,13 +24,9 @@ variabel1 = '''
     yang berarti saat kita membuat sebuah variabel, kita sudah memesan
     sebagian kecil ruang memori untuk dipakai dan diisi dengan
     sebuah nilai untuk kita pakai kembali.
-
-########################################################################
 '''
 
 variabel2 = '''
-########################################################################
-
 - Menetapkan Nilai Kedalam Variabel
 
     tidak ada pernyataan eksplisit untuk membuat sebuah variabel,
@@ -60,13 +51,9 @@ variabel2 = '''
         print (berat)
 
     ketika kode program dijalankan akan menghasilkan :
-
-########################################################################
 '''
 
 variabel3 = '''
-########################################################################
-
 - Multiple Asignment
 
     python bisa menetapkan nilai tunggal untuk beberapa variabel.
@@ -92,13 +79,9 @@ variabel3 = '''
         c = "Ucup"
 
     hanya saja penulisan yang sebelumnya dibuat dalam satu line.
-
-########################################################################
 '''
 
 variabel4 = '''
-########################################################################
-
 - Tipe Data
 
     Data yang disimpan dalam memori dapat beragam jenis. Misalnya, 
@@ -115,13 +98,9 @@ variabel4 = '''
          List
          Tuple
          Dictionary
-
-########################################################################
 '''
 
 variabel5 = '''
-########################################################################
-
 - Tipe Data Number
 
     tipe data number menyimpan nilai numerik. object number dibuat
@@ -152,22 +131,18 @@ variabel5 = '''
 
     dibawah ini adalah beberapa tipe number
 
-        int			float			complex
+        int         float           complex
 
-        10			0.0			    3.14j
-        100			15.20			45.j
-        -786		-21.9			9.322e-36j
-        080			32.3+e18		.876j
-        -0480		-90.			-.6545+0j
-        -0x260		-32.54e100		3e+26j
-        0x69		70.2-E12		3.56e-7j
-
-########################################################################
+        10          0.0             3.14j
+        100         15.20           45.j
+        -786        -21.9           9.322e-36j
+        080         32.3+e18        .876j
+        -0480       -90.            -.6545+0j
+        -0x260      -32.54e100      3e+26j
+        0x69        70.2-E12        3.56e-7j
 '''
 
 variabel6 = '''
-########################################################################
-
 - Tipe Data String
 
     string dalam python diidentifikasi sebagai gabungan karakter
@@ -190,13 +165,9 @@ variabel6 = '''
         print(str + "TEST")	# Prints penggabungan 2 string
 
     ketika kode dijalankan akan menghasilkan :
-
-########################################################################
 '''
 
 variabel7 = '''
-########################################################################
-
 - Tipe Data List
 
     tipe data list dalam python adalah tipe data yang paling sebaguna.
@@ -223,13 +194,9 @@ variabel7 = '''
         print(list1 + list2)    # Prints gabungan dua lists
         
     ketika kode dijalankan akan menghasilkan :
-
-########################################################################
 '''
 
 variabel8 = '''
-########################################################################
-
 - Tipe Data Tuple
 
     Tuple adalah tipe data urutan lain yang sama seperti list. tuple 
@@ -253,13 +220,9 @@ variabel8 = '''
         print(tuple1 + tuple2)  # Prints gabungan dua tuple 
         
     ketika kode dijalankan akan menghasilkan :
-
-########################################################################
 '''
 
 variabel8_1 = '''
-########################################################################
-
     kode dibawah adalah kode tidak valid dalam tuple, karena kita
     mencoba untuk merubah nilai tuple. sama kasusnya seperti pada list 
 	
@@ -269,13 +232,9 @@ variabel8_1 = '''
         list[2] = 1000     # Valid syntax list 
 	
     ketika kode diatas akan menghasilkan : error
-
-########################################################################
 '''
 
 variabel9 = '''
-########################################################################
-
 - Tipe Data Dictionary
 
     Python dictionary adalah semacam tipe hash-table (tabel campuran). 
@@ -300,85 +259,82 @@ variabel9 = '''
         print(dict2.values())     # Prints semua values (nilai)
 
     Ketika kode dijalankan akan menghasilkan :
-
-########################################################################
 '''
 
 variabel10 = '''
-########################################################################
-
 - Konversi Tipe Data
 
-Terkadang kita butuh untuk bisa mengubah nilai atau tipe data menjadi 
-tipe data yang lain. python memungkinkan kita untuk bisa merubah 
-nilai atau tipe data menjadi tipe data yang lain dengan menggunakan 
-built-in function yang telah disediakan oleh bahasa pemrograman ini.
+    Terkadang kita butuh untuk bisa mengubah nilai atau tipe data menjadi 
+    tipe data yang lain. python memungkinkan kita untuk bisa merubah 
+    nilai atau tipe data menjadi tipe data yang lain dengan menggunakan 
+    built-in function yang telah disediakan oleh bahasa pemrograman ini.
 
-Function
-Description 
+        Function
+        Description 
 
-int(x [,base])
-Converts x to an integer. The base specifies the base if x is a string. 
+        int(x [,base])
+        Converts x to an integer. The base specifies the base if x is a string. 
 
-float(x)
-Converts x to a floating-point number.
+        float(x)
+        Converts x to a floating-point number.
 
-complex(real [,imag])
-Creates a complex number.
+        complex(real [,imag])
+        Creates a complex number.
 
-str(x)
-Converts object x to a string representation.
+        str(x)
+        Converts object x to a string representation.
 
-repr(x)
-Converts object x to an expression string.
+        repr(x)
+        Converts object x to an expression string.
 
-eval(str)
-Evaluates a string and returns an object.
+        eval(str)
+        Evaluates a string and returns an object.
 
-tuple(s)
-Converts s to a tuple.
+        tuple(s)
+        Converts s to a tuple.
 
-list(s)
-Converts s to a list.
+        list(s)
+        Converts s to a list.
 
-set(s)
-Converts s to a set.
+        set(s)
+        Converts s to a set.
 
-dict(d)
-Creates a dictionary. d must be a sequence of (key,value) tuples.
+        dict(d)
+        Creates a dictionary. d must be a sequence of (key,value) tuples.
 
-frozenset(s)
-Converts s to a frozen set.
+        frozenset(s)
+        Converts s to a frozen set.
 
-chr(x)
-Converts an integer to a character.
+        chr(x)
+        Converts an integer to a character.
 
-unichr(x)
-Converts an integer to a Unicode character.
+        unichr(x)
+        Converts an integer to a Unicode character.
 
-ord(x)
-Converts a single character to its integer value.
+        ord(x)
+        Converts a single character to its integer value.
 
-hex(x)
-Converts an integer to a hexadecimal string.
+        hex(x)
+        Converts an integer to a hexadecimal string.
 
-oct(x)
-Converts an integer to an octal string.
-
-########################################################################
+        oct(x)
+        Converts an integer to an octal string.
 '''
 
-
-
 ########################################################################
 
-def overview():
+def overview_variabel():
     ''' overview '''
+    helper.clear()
+    helper.title_sparator(" // Variabel // ")
     print(variabel1)
+    helper.mini_sparator()
 
 def nilai_variabel():
     ''' Assigning Values to Variables '''
+    helper.title_sparator(" // Variabel // ")
     print(variabel2)
+    helper.mini_sparator()
     nama = "Hama Wereng"    # string
     tinggi = 157            # integer
     berat = 57,8            # float
@@ -388,31 +344,39 @@ def nilai_variabel():
     print(berat)
 
 def multiple_assignment():
-	''' multiple asignment '''
-	print(variabel3)
+    ''' multiple asignment '''
+    helper.title_sparator(" // Variabel // ")
+    print(variabel3)
+    helper.mini_sparator()
 
 def tipe_data():
-	''' Standard Data Types '''
-	print(variabel4)
+    ''' Standard Data Types '''
+    helper.title_sparator(" // Variabel // ")
+    print(variabel4)
+    helper.mini_sparator()
 
 def Python_number():
-	''' Python Numbers '''
-	print(variabel5)
+    ''' Python Numbers '''
+    helper.title_sparator(" // Variabel // ")
+    print(variabel5)
+    helper.mini_sparator()
 
 def python_string():
-	''' Python Strings '''
-	print(variabel6)
-
-	str ='Hello World!'
-	print(str)	    # Prints semua string
-	print(str[0])	# Prints karakter pertama string
-	print(str[2:5])	# Prints karakter dimulai dari ke 3 sampai ke 5
-	print(str[2:])	# Prints string dimulai dari karakter ke 3
-	print(str*2)	# Prints string dua kali
-	print(str + "TEST")	# Prints penggabungan 2 string
+    ''' Python Strings '''
+    helper.title_sparator(" // Variabel // ")
+    print(variabel6)
+    helper.mini_sparator()
+    str ='Hello dangdut!'
+    print(str)	    # Prints semua string
+    print(str[0])	# Prints karakter pertama string
+    print(str[2:5])	# Prints karakter dimulai dari ke 3 sampai ke 5
+    print(str[2:])	# Prints string dimulai dari karakter ke 3
+    print(str*2)	# Prints string dua kali
+    print(str + "TEST")	# Prints penggabungan 2 string
 
 def python_list():
     ''' Python List '''
+    helper.title_sparator(" // Variabel // ")
     print(variabel7)
     list1 = ['abc', 123 , 1.23, 'Ucup', 12.3]
     list2 = [321, 'Nurdin']
@@ -425,7 +389,9 @@ def python_list():
 
 def python_tuple():
     ''' Python Tuple '''
+    helper.title_sparator(" // Variabel // ")
     print(variabel8)
+    helper.mini_sparator()
 
     tuple1 = ('abc', 123 , 1.23, 'Ucup', 12.3) 
     tuple2 = (321, 'Kosim') 
@@ -437,6 +403,7 @@ def python_tuple():
     print(tuple1 + tuple2)  # Prints gabungan dua tuple
     
     print(variabel8_1)
+    helper.mini_sparator()
     
     try:
         tuple = ('abc', 123 , 1.23, 'Ucup', 12.3)
@@ -448,7 +415,9 @@ def python_tuple():
 
 def python_dictionary():
     ''' Python Dictionary '''
+    helper.title_sparator(" // Variabel // ")
     print(variabel9)
+    helper.mini_sparator()
     dict1 = {}
     dict1['tamvan'] = "aku orang tamvan" 
     dict1[2] = "indeks ke dua" 
@@ -460,14 +429,16 @@ def python_dictionary():
     print(dict2.values())     # Prints semua values (nilai)
 
 def konversi_tipe_data():
-	''' Data Type Conversion '''
-	print(variabel10)
+    ''' Data Type Conversion '''
+    helper.title_sparator(" // Variabel // ")
+    print(variabel10)
+    helper.mini_sparator()
 
 
 
 ########################################################################
 
-# overview()
+# overview_variabel()
 # nilai_variabel()
 # multiple_assignment()
 # tipe_data()
@@ -480,5 +451,21 @@ def konversi_tipe_data():
 
 ########################################################################
 
-if __name__ == '__main__':
-	print(__name__)
+def variabel_menu():
+    helper.clear()
+    helper.sparator(" // Variabel // ")
+    print('''
+    [1]     Variabel
+    [2]     Nilai Nariabel
+    [3]     Multiple Assignment
+    [4]     Tipe Data
+    [5]     Python Number()
+    [6]     python String()
+    [7]     python List()
+    [8]     python Tuple()
+    [9]     python Dictionary()
+    [10]    Konversi Tipe Data()
+    ''')
+    helper.mini_sparator()
+
+variabel_menu()
