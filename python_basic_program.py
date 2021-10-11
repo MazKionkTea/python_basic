@@ -16,10 +16,20 @@ from variabel import variabel
 
 ########################################################################
 
+def main_python_basic_program():
+        helper.python_basic()
+        option = input(">>> ").lower()
+        if option == "x":
+            helper.clear_exit()
+        elif option == "1":
+            print("in process...!!!")
+        else:
+            helper.force_close_program()
 
-helper.clear()
+
+
 def start_variabel_progrem():
-    
+    helper.clear()
     def option_program():
             helper.back_exit()
             option = input(">>> ").lower()
@@ -84,32 +94,4 @@ def start_variabel_progrem():
         else:
             helper.force_close_program()
 
-def main_python_basic_program():
-    while True:
-        helper.python_basic()
-        option = input(">>> ").lower()
-        if option == "x":
-            helper.clear_exit()
-        elif option == "1":
-            print("in process...!!!")
-            time.sleep(2)
-            print("bye...")
-            time.sleep(2)
-            helper.clear_exit()
-        elif option == "2":
-            variabel.variabel_menu()
-            helper.back_exit()
-            option = input(">>> ")
-            if option == "x":
-                helper.clear_exit()
-            elif option == "0":
-                helper.clear()
-                main_python_basic_program()
-            else:
-                helper.force_close_program()
-        else:
-            helper.force_close_program()
-
-# main_python_basic_program()
-
-start_variabel_progrem()
+main_python_basic_program()

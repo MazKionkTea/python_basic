@@ -21,17 +21,14 @@ Copyright (c) 2021 Copyright Holder. All rights reserved.
 
 ########################################################################
 
-def sparator(arg):
-    print("#".center(72, "#"))
-    print(arg.center(72, "#"))
-    print("#".center(72, "#"))
-sparator(" // Basic Operator // ")
+import os
+import helper
 
 ########################################################################
 
-aritmatic = '''
-########################################################################
+helper.sparator(" // Basic Operator // ")
 
+operator_aritmatika = '''
             " Arithmetic Operators/Operator Aritmatika "               
 
 
@@ -46,77 +43,115 @@ aritmatic = '''
     [5]  **  (Perpangkatan)         Contoh : a**b =10 to the power 20
     [6]  %   (Modulus)              Contoh : b % a = 1
     [7]  //  (Floor Division)       Contoh : 9//2 = 4 and 9.0//2.0 = 4.0
-
-########################################################################
 '''
 
 # •	Arithmetic Operators/Operator Aritmatika
-
-def aritmatika():
+def overview_aritmatika():
     ''' Operator Aritmatika '''
-    print(aritmatic)
+    helper.clear()
+    helper.title_sparator(" // Basic Operator // ")
+    print(operator_aritmatika)
+    helper.mini_sparator
 
 # Addition/penjumlahan
-def tambah(a, b):
+def tambah():
     ''' Penjumlahan '''
+    helper.clear()
+    helper.title_sparator("// Penjumlahan //")
+    a = input("Masukan nilai a (integer/angka) : ")
+    print("Nilai a = ", a)
+    b = input("Masukan nilai b (integer/angka) : ")
+    print("Nilai b = ", b)
     c = a + b
+    print("c = a + b")
+    print(a + b)
     return c
-# tambah(10, 3)
 
 # Subtraction/pengurangan
-def kurang(a, b):
+def kurang():
     ''' Pengurangan '''
+    helper.clear()
+    helper.title_sparator("// Pengurangan //")
+    a = input("Masukan nilai a (integer/angka) : ")
+    print("Nilai a = ", a)
+    b = input("Masukan nilai b (integer/angka) : ")
+    print("Nilai b = ", b)
     c = a - b
+    print("c = a + b")
+    print(a - b)
     return c
-# kurang(15, 2)
 
 # Multiplication/perkalian
-def kali(a, b):
+def kali():
     ''' Perkalian '''
+    helper.clear()
+    helper.title_sparator("// Perkalian //")
+    a = input("Masukan nilai a (integer/angka) : ")
+    print("Nilai a = ", a)
+    b = input("Masukan nilai b (integer/angka) : ")
+    print("Nilai b = ", b)
+    print("c = a * b")
     c = a * b
     return c
-# kali(5, 5)
 
 # Division/pembagian
-def bagi(a, b):
+def bagi():
     ''' Pembagian '''
+    helper.clear()
+    helper.title_sparator("// Pembagian //")
+    a = input("Masukan nilai a (integer/angka) : ")
+    print("Nilai a = ", a)
+    b = input("Masukan nilai b (integer/angka) : ")
+    print("Nilai b = ", b)
+    print("c = a / b")
     c = a / b
     return c
-# bagi(10, 3)
 
 # Exponent/Pangkat Kuadrat
-def kuadrat(a, b):
+def kuadrat():
     ''' Pangkat Kuadrat '''
+    helper.clear()
+    helper.title_sparator("// Pangkat Kuadrat //")
+    a = input("Masukan nilai a (integer/angka) : ")
+    print("Nilai a = ", a)
+    b = input("Masukan nilai b (integer/angka) : ")
+    print("Nilai b = ", b)
+    print("c = a ** b")
     c = a ** b
     return c
 # kuadrat(2, 5)
 
 # jika sisa pembagian 1 = ganjil
 # jika sisa pembagian 0 = genap
-def modulus(a, b):
+def modulus():
     ''' Modulus/SisaBagi Hasil '''
+    helper.clear()
+    helper.title_sparator("// Modulus/SisaBagi Hasil //")
+    a = input("Masukan nilai a (integer/angka) : ")
+    print("Nilai a = ", a)
+    b = input("Masukan nilai b (integer/angka) : ")
+    print("Nilai b = ", b)
+    print("c = a % b")
     c = a % b
     return c 
 # modulus(13, 3)
 
 # Pembagian operan di mana hasilnya adalah quotient
 # # di mana digit setelah koma desimal dihapus
-def division(a, b):
+def division():
     ''' Floor Division '''
+    helper.clear()
+    helper.title_sparator("// Floor Division //")
+    a = input("Masukan nilai a (integer/angka) : ")
+    print("Nilai a = ", a)
+    b = input("Masukan nilai b (integer/angka) : ")
+    print("Nilai b = ", b)
     # 9//2 = 4 and 9.0//2.0 = 4.0, -11//3 = -4, -11.0//3 = -4.0
+    print("c = a // b")
     c = a // b
     return c
 # division(16, 3)
 
 ########################################################################
-
-# aritmatika()
-# tambah()
-# kurang()
-# kali()
-# bagi()
-# kuadrat()
-# modulus()
-# division()
 
 ########################################################################
